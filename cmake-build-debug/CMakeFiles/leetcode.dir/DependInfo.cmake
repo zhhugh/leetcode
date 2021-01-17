@@ -4,8 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/zhouhan/CLionProjects/leetcode/BinarySearch/leetcode74.cpp" "/Users/zhouhan/CLionProjects/leetcode/cmake-build-debug/CMakeFiles/leetcode.dir/BinarySearch/leetcode74.cpp.o"
-  "/Users/zhouhan/CLionProjects/leetcode/main.cpp" "/Users/zhouhan/CLionProjects/leetcode/cmake-build-debug/CMakeFiles/leetcode.dir/main.cpp.o"
+  "/Users/zhouhan/githubProject/leetcode/BinarySearch/leetcode74.cpp" "/Users/zhouhan/githubProject/leetcode/cmake-build-debug/CMakeFiles/leetcode.dir/BinarySearch/leetcode74.cpp.o"
+  "/Users/zhouhan/githubProject/leetcode/main.cpp" "/Users/zhouhan/githubProject/leetcode/cmake-build-debug/CMakeFiles/leetcode.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
 
