@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/zhouhan/githubProject/leetcode/BinarySearch/leetcode275.cpp
+../common.h
+/Users/zhouhan/githubProject/leetcode/common.h
+
+/Users/zhouhan/githubProject/leetcode/BinarySearch/leetcode74.cpp
+../common.h
+/Users/zhouhan/githubProject/leetcode/common.h
+
+/Users/zhouhan/githubProject/leetcode/common.h
+iostream
+-
+vector
+-
+
+/Users/zhouhan/githubProject/leetcode/main.cpp
+iostream
+-
+

@@ -78,6 +78,9 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/zhouhan/githubProject/leetcode/BinarySearch/leetcode275.cpp">
+			<Option target="leetcode"/>
+		</Unit>
 		<Unit filename="/Users/zhouhan/githubProject/leetcode/BinarySearch/leetcode74.cpp">
 			<Option target="leetcode"/>
 		</Unit>

@@ -143,6 +143,33 @@ leetcode/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/leetcode.dir/build.make CMakeFiles/leetcode.dir/build
 .PHONY : leetcode/fast
 
+BinarySearch/leetcode275.o: BinarySearch/leetcode275.cpp.o
+
+.PHONY : BinarySearch/leetcode275.o
+
+# target to build an object file
+BinarySearch/leetcode275.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/leetcode.dir/build.make CMakeFiles/leetcode.dir/BinarySearch/leetcode275.cpp.o
+.PHONY : BinarySearch/leetcode275.cpp.o
+
+BinarySearch/leetcode275.i: BinarySearch/leetcode275.cpp.i
+
+.PHONY : BinarySearch/leetcode275.i
+
+# target to preprocess a source file
+BinarySearch/leetcode275.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/leetcode.dir/build.make CMakeFiles/leetcode.dir/BinarySearch/leetcode275.cpp.i
+.PHONY : BinarySearch/leetcode275.cpp.i
+
+BinarySearch/leetcode275.s: BinarySearch/leetcode275.cpp.s
+
+.PHONY : BinarySearch/leetcode275.s
+
+# target to generate assembly for a file
+BinarySearch/leetcode275.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/leetcode.dir/build.make CMakeFiles/leetcode.dir/BinarySearch/leetcode275.cpp.s
+.PHONY : BinarySearch/leetcode275.cpp.s
+
 BinarySearch/leetcode74.o: BinarySearch/leetcode74.cpp.o
 
 .PHONY : BinarySearch/leetcode74.o
@@ -206,6 +233,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... leetcode"
+	@echo "... BinarySearch/leetcode275.o"
+	@echo "... BinarySearch/leetcode275.i"
+	@echo "... BinarySearch/leetcode275.s"
 	@echo "... BinarySearch/leetcode74.o"
 	@echo "... BinarySearch/leetcode74.i"
 	@echo "... BinarySearch/leetcode74.s"
