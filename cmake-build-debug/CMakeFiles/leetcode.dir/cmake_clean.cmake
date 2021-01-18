@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/leetcode.dir/BinarySearch/leetcode275.cpp.o"
+  "CMakeFiles/leetcode.dir/BinarySearch/leetcode534.cpp.o"
   "CMakeFiles/leetcode.dir/BinarySearch/leetcode74.cpp.o"
   "CMakeFiles/leetcode.dir/main.cpp.o"
   "leetcode"
