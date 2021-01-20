@@ -4,6 +4,9 @@
 CMakeFiles/leetcode.dir/BinarySearch/leetcode275.cpp.o: ../BinarySearch/leetcode275.cpp
 CMakeFiles/leetcode.dir/BinarySearch/leetcode275.cpp.o: ../common.h
 
+CMakeFiles/leetcode.dir/BinarySearch/leetcode3.cpp.o: ../BinarySearch/leetcode3.cpp
+CMakeFiles/leetcode.dir/BinarySearch/leetcode3.cpp.o: ../common.h
+
 CMakeFiles/leetcode.dir/BinarySearch/leetcode378.cpp.o: ../BinarySearch/leetcode378.cpp
 CMakeFiles/leetcode.dir/BinarySearch/leetcode378.cpp.o: ../common.h
 

@@ -81,6 +81,9 @@
 		<Unit filename="/Users/zhouhan/githubProject/leetcode/BinarySearch/leetcode275.cpp">
 			<Option target="leetcode"/>
 		</Unit>
+		<Unit filename="/Users/zhouhan/githubProject/leetcode/BinarySearch/leetcode3.cpp">
+			<Option target="leetcode"/>
+		</Unit>
 		<Unit filename="/Users/zhouhan/githubProject/leetcode/BinarySearch/leetcode378.cpp">
 			<Option target="leetcode"/>
 		</Unit>

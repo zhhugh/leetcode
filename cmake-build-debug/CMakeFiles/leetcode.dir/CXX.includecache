@@ -6,11 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/Users/zhouhan/githubProject/leetcode/BinarySearch/leetcode378.cpp
-../common.h
-/Users/zhouhan/githubProject/leetcode/common.h
-
-/Users/zhouhan/githubProject/leetcode/BinarySearch/leetcode530.cpp
+/Users/zhouhan/githubProject/leetcode/BinarySearch/leetcode3.cpp
 ../common.h
 /Users/zhouhan/githubProject/leetcode/common.h
 
@@ -19,10 +15,6 @@ iostream
 -
 vector
 -
-
-/Users/zhouhan/githubProject/leetcode/main.cpp
-iostream
+queue
 -
-BinarySearch/leetcode530.cpp
-/Users/zhouhan/githubProject/leetcode/BinarySearch/leetcode530.cpp
 
