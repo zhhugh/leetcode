@@ -93,6 +93,9 @@
 		<Unit filename="/Users/zhouhan/githubProject/leetcode/BinarySearch/leetcode74.cpp">
 			<Option target="leetcode"/>
 		</Unit>
+		<Unit filename="/Users/zhouhan/githubProject/leetcode/StringCode/leetcode5.cpp">
+			<Option target="leetcode"/>
+		</Unit>
 		<Unit filename="/Users/zhouhan/githubProject/leetcode/common.h">
 			<Option target="leetcode"/>
 		</Unit>

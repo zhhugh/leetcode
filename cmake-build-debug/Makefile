@@ -278,6 +278,33 @@ BinarySearch/leetcode74.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/leetcode.dir/build.make CMakeFiles/leetcode.dir/BinarySearch/leetcode74.cpp.s
 .PHONY : BinarySearch/leetcode74.cpp.s
 
+StringCode/leetcode5.o: StringCode/leetcode5.cpp.o
+
+.PHONY : StringCode/leetcode5.o
+
+# target to build an object file
+StringCode/leetcode5.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/leetcode.dir/build.make CMakeFiles/leetcode.dir/StringCode/leetcode5.cpp.o
+.PHONY : StringCode/leetcode5.cpp.o
+
+StringCode/leetcode5.i: StringCode/leetcode5.cpp.i
+
+.PHONY : StringCode/leetcode5.i
+
+# target to preprocess a source file
+StringCode/leetcode5.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/leetcode.dir/build.make CMakeFiles/leetcode.dir/StringCode/leetcode5.cpp.i
+.PHONY : StringCode/leetcode5.cpp.i
+
+StringCode/leetcode5.s: StringCode/leetcode5.cpp.s
+
+.PHONY : StringCode/leetcode5.s
+
+# target to generate assembly for a file
+StringCode/leetcode5.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/leetcode.dir/build.make CMakeFiles/leetcode.dir/StringCode/leetcode5.cpp.s
+.PHONY : StringCode/leetcode5.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -329,6 +356,9 @@ help:
 	@echo "... BinarySearch/leetcode74.o"
 	@echo "... BinarySearch/leetcode74.i"
 	@echo "... BinarySearch/leetcode74.s"
+	@echo "... StringCode/leetcode5.o"
+	@echo "... StringCode/leetcode5.i"
+	@echo "... StringCode/leetcode5.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
