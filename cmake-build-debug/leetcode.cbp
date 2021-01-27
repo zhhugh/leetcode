@@ -105,6 +105,9 @@
 		<Unit filename="/Users/zhouhan/githubProject/leetcode/MonotonousStack/leetcode739.cpp">
 			<Option target="leetcode"/>
 		</Unit>
+		<Unit filename="/Users/zhouhan/githubProject/leetcode/MonotonousStack/leetcode84.cpp">
+			<Option target="leetcode"/>
+		</Unit>
 		<Unit filename="/Users/zhouhan/githubProject/leetcode/SlidingWindow/leetcode1438.cpp">
 			<Option target="leetcode"/>
 		</Unit>

@@ -386,6 +386,33 @@ MonotonousStack/leetcode739.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/leetcode.dir/build.make CMakeFiles/leetcode.dir/MonotonousStack/leetcode739.cpp.s
 .PHONY : MonotonousStack/leetcode739.cpp.s
 
+MonotonousStack/leetcode84.o: MonotonousStack/leetcode84.cpp.o
+
+.PHONY : MonotonousStack/leetcode84.o
+
+# target to build an object file
+MonotonousStack/leetcode84.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/leetcode.dir/build.make CMakeFiles/leetcode.dir/MonotonousStack/leetcode84.cpp.o
+.PHONY : MonotonousStack/leetcode84.cpp.o
+
+MonotonousStack/leetcode84.i: MonotonousStack/leetcode84.cpp.i
+
+.PHONY : MonotonousStack/leetcode84.i
+
+# target to preprocess a source file
+MonotonousStack/leetcode84.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/leetcode.dir/build.make CMakeFiles/leetcode.dir/MonotonousStack/leetcode84.cpp.i
+.PHONY : MonotonousStack/leetcode84.cpp.i
+
+MonotonousStack/leetcode84.s: MonotonousStack/leetcode84.cpp.s
+
+.PHONY : MonotonousStack/leetcode84.s
+
+# target to generate assembly for a file
+MonotonousStack/leetcode84.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/leetcode.dir/build.make CMakeFiles/leetcode.dir/MonotonousStack/leetcode84.cpp.s
+.PHONY : MonotonousStack/leetcode84.cpp.s
+
 SlidingWindow/leetcode1438.o: SlidingWindow/leetcode1438.cpp.o
 
 .PHONY : SlidingWindow/leetcode1438.o
@@ -611,6 +638,9 @@ help:
 	@echo "... MonotonousStack/leetcode739.o"
 	@echo "... MonotonousStack/leetcode739.i"
 	@echo "... MonotonousStack/leetcode739.s"
+	@echo "... MonotonousStack/leetcode84.o"
+	@echo "... MonotonousStack/leetcode84.i"
+	@echo "... MonotonousStack/leetcode84.s"
 	@echo "... SlidingWindow/leetcode1438.o"
 	@echo "... SlidingWindow/leetcode1438.i"
 	@echo "... SlidingWindow/leetcode1438.s"

@@ -8,6 +8,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/leetcode.dir/Bit_operation/leetcode136.cpp.o"
   "CMakeFiles/leetcode.dir/Bit_operation/leetcode260.cpp.o"
   "CMakeFiles/leetcode.dir/MonotonousStack/leetcode739.cpp.o"
+  "CMakeFiles/leetcode.dir/MonotonousStack/leetcode84.cpp.o"
   "CMakeFiles/leetcode.dir/SlidingWindow/leetcode1438.cpp.o"
   "CMakeFiles/leetcode.dir/SlidingWindow/offer59_I.cpp.o"
   "CMakeFiles/leetcode.dir/SortCode/MergeSort.cpp.o"
