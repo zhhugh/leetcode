@@ -8,19 +8,16 @@
 class Solution {
 public:
     vector<int> dailyTemperatures(vector<int>& T) {
-        stack<int> stk; //
+        stack<int> stk; // 单调栈， 底->顶 大->小
         int n = T.size();
         vector<int> res(n, 0);
         for(int i = 0; i < n; i++){
+            // 将栈中小于T[i]的元素出栈，生成记录
             while(!stk.empty() && T[stk.top()] < T[i]){
                 res[stk.top()] = i - stk.top();
                 stk.pop();
             }
             stk.push(i);
-        }
-        while(!stk.empty()){
-            res[stk.top()] = 0;
-            stk.pop();
         }
         return res;
     }
