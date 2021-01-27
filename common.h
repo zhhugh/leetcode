@@ -8,11 +8,14 @@
 #include <iostream>
 #include <vector>
 #include <queue>
+#include <deque>
+#include <stack>
 using namespace std;
 
-/*
- * 马拉车计算最长回文子串
- */
+//string
+
+//马拉车计算最长回文子串
+
 class Manacher {
 public:
 
@@ -74,6 +77,37 @@ public:
         return s.substr(begin, maxlen);
     }
 };
+
+
+// stack
+
+//单调栈 序列中无重复值
+vector<vector<int>> getNearLessNoRepeat(vector<int> arr){
+    int n = arr.size();
+    // 记录每个数左边最近的比它小的数和右边最近的比它小的数
+    vector<vector<int>> res(n, vector<int>(2, 0));
+    stack<int> stk;
+    for(int i = 0; i < n; i++){
+        while(!stk.empty() && arr[stk.top()] > arr[i]){
+            int idx = stk.top();
+            stk.pop();
+            int leftLessIdx = stk.empty() ? -1 : stk.top();
+            res[idx][0] = leftLessIdx;
+            res[idx][1] = i;
+        }
+        stk.push(i);
+    }
+    while(!stk.empty()){
+        int idx = stk.top();
+        stk.pop();
+        int leftLessIdx = stk.empty() ? -1 : stk.top();
+        res[idx][0] = leftLessIdx;
+        res[idx][1] = -1;
+    }
+    return res;
+}
+
+
 
 
 #endif //LEETCODE_COMMON_H
