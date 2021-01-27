@@ -27,14 +27,16 @@ public:
                     qmin.pop_back();
                 }
                 qmin.push_back(R);
-
+                // R 到达第一个不合法的位置
                 if(nums[qmax.front()] - nums[qmin.front()] > limit){
                     break;
                 }
+                // R 向右边拓展
                 R++;
             }
             // R为第一个不满足条件的右边界
             res = max(res, R - L);
+            // 判断下标是否过期
             if(L == qmax.front()){
                 qmax.pop_front();
             }
