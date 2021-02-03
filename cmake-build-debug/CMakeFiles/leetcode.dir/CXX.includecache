@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/Users/zhouhan/githubProject/leetcode/StringCode/leetcode5.cpp
+/Users/zhouhan/githubProject/leetcode/TrieTree/leetcode720.cpp
 ../common.h
 /Users/zhouhan/githubProject/leetcode/common.h
 
@@ -17,4 +17,12 @@ vector
 -
 queue
 -
+deque
+-
+stack
+-
+
+/Users/zhouhan/githubProject/leetcode/main.cpp
+TrieTree/leetcode720.cpp
+/Users/zhouhan/githubProject/leetcode/TrieTree/leetcode720.cpp
 

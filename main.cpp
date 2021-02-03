@@ -1,12 +1,13 @@
-#include <iostream>
-#include "BinarySearch/leetcode530.cpp"
+
+#include "TrieTree/leetcode720.cpp"
 
 
-
-int main() {
-    Solution2 s;
-    vector<int> arr{3,3,7,7,10,11,11};
-    int n = s.singleNonDuplicate(arr);
-    cout << n << endl;
+int main(){
+    Solution s;
+    vector<string>arr{"worl", "world", "w","wo","wor","worl"};
+    string ans = s.longestWord(  arr);
+    cout << ans << endl;
     return 0;
 }
+
+

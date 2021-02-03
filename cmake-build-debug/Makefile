@@ -359,6 +359,60 @@ Bit_operation/leetcode260.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/leetcode.dir/build.make CMakeFiles/leetcode.dir/Bit_operation/leetcode260.cpp.s
 .PHONY : Bit_operation/leetcode260.cpp.s
 
+Bit_operation/leetcode50.o: Bit_operation/leetcode50.cpp.o
+
+.PHONY : Bit_operation/leetcode50.o
+
+# target to build an object file
+Bit_operation/leetcode50.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/leetcode.dir/build.make CMakeFiles/leetcode.dir/Bit_operation/leetcode50.cpp.o
+.PHONY : Bit_operation/leetcode50.cpp.o
+
+Bit_operation/leetcode50.i: Bit_operation/leetcode50.cpp.i
+
+.PHONY : Bit_operation/leetcode50.i
+
+# target to preprocess a source file
+Bit_operation/leetcode50.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/leetcode.dir/build.make CMakeFiles/leetcode.dir/Bit_operation/leetcode50.cpp.i
+.PHONY : Bit_operation/leetcode50.cpp.i
+
+Bit_operation/leetcode50.s: Bit_operation/leetcode50.cpp.s
+
+.PHONY : Bit_operation/leetcode50.s
+
+# target to generate assembly for a file
+Bit_operation/leetcode50.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/leetcode.dir/build.make CMakeFiles/leetcode.dir/Bit_operation/leetcode50.cpp.s
+.PHONY : Bit_operation/leetcode50.cpp.s
+
+HeapCode/leetcode703.o: HeapCode/leetcode703.cpp.o
+
+.PHONY : HeapCode/leetcode703.o
+
+# target to build an object file
+HeapCode/leetcode703.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/leetcode.dir/build.make CMakeFiles/leetcode.dir/HeapCode/leetcode703.cpp.o
+.PHONY : HeapCode/leetcode703.cpp.o
+
+HeapCode/leetcode703.i: HeapCode/leetcode703.cpp.i
+
+.PHONY : HeapCode/leetcode703.i
+
+# target to preprocess a source file
+HeapCode/leetcode703.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/leetcode.dir/build.make CMakeFiles/leetcode.dir/HeapCode/leetcode703.cpp.i
+.PHONY : HeapCode/leetcode703.cpp.i
+
+HeapCode/leetcode703.s: HeapCode/leetcode703.cpp.s
+
+.PHONY : HeapCode/leetcode703.s
+
+# target to generate assembly for a file
+HeapCode/leetcode703.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/leetcode.dir/build.make CMakeFiles/leetcode.dir/HeapCode/leetcode703.cpp.s
+.PHONY : HeapCode/leetcode703.cpp.s
+
 MonotonousStack/leetcode739.o: MonotonousStack/leetcode739.cpp.o
 
 .PHONY : MonotonousStack/leetcode739.o
@@ -521,33 +575,6 @@ StringCode/leetcode5.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/leetcode.dir/build.make CMakeFiles/leetcode.dir/StringCode/leetcode5.cpp.s
 .PHONY : StringCode/leetcode5.cpp.s
 
-StringCode/leetcode6.o: StringCode/leetcode6.cpp.o
-
-.PHONY : StringCode/leetcode6.o
-
-# target to build an object file
-StringCode/leetcode6.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/leetcode.dir/build.make CMakeFiles/leetcode.dir/StringCode/leetcode6.cpp.o
-.PHONY : StringCode/leetcode6.cpp.o
-
-StringCode/leetcode6.i: StringCode/leetcode6.cpp.i
-
-.PHONY : StringCode/leetcode6.i
-
-# target to preprocess a source file
-StringCode/leetcode6.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/leetcode.dir/build.make CMakeFiles/leetcode.dir/StringCode/leetcode6.cpp.i
-.PHONY : StringCode/leetcode6.cpp.i
-
-StringCode/leetcode6.s: StringCode/leetcode6.cpp.s
-
-.PHONY : StringCode/leetcode6.s
-
-# target to generate assembly for a file
-StringCode/leetcode6.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/leetcode.dir/build.make CMakeFiles/leetcode.dir/StringCode/leetcode6.cpp.s
-.PHONY : StringCode/leetcode6.cpp.s
-
 Tree/offer33.o: Tree/offer33.cpp.o
 
 .PHONY : Tree/offer33.o
@@ -574,6 +601,60 @@ Tree/offer33.s: Tree/offer33.cpp.s
 Tree/offer33.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/leetcode.dir/build.make CMakeFiles/leetcode.dir/Tree/offer33.cpp.s
 .PHONY : Tree/offer33.cpp.s
+
+TrieTree/TrieTree.o: TrieTree/TrieTree.cpp.o
+
+.PHONY : TrieTree/TrieTree.o
+
+# target to build an object file
+TrieTree/TrieTree.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/leetcode.dir/build.make CMakeFiles/leetcode.dir/TrieTree/TrieTree.cpp.o
+.PHONY : TrieTree/TrieTree.cpp.o
+
+TrieTree/TrieTree.i: TrieTree/TrieTree.cpp.i
+
+.PHONY : TrieTree/TrieTree.i
+
+# target to preprocess a source file
+TrieTree/TrieTree.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/leetcode.dir/build.make CMakeFiles/leetcode.dir/TrieTree/TrieTree.cpp.i
+.PHONY : TrieTree/TrieTree.cpp.i
+
+TrieTree/TrieTree.s: TrieTree/TrieTree.cpp.s
+
+.PHONY : TrieTree/TrieTree.s
+
+# target to generate assembly for a file
+TrieTree/TrieTree.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/leetcode.dir/build.make CMakeFiles/leetcode.dir/TrieTree/TrieTree.cpp.s
+.PHONY : TrieTree/TrieTree.cpp.s
+
+TrieTree/leetcode720.o: TrieTree/leetcode720.cpp.o
+
+.PHONY : TrieTree/leetcode720.o
+
+# target to build an object file
+TrieTree/leetcode720.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/leetcode.dir/build.make CMakeFiles/leetcode.dir/TrieTree/leetcode720.cpp.o
+.PHONY : TrieTree/leetcode720.cpp.o
+
+TrieTree/leetcode720.i: TrieTree/leetcode720.cpp.i
+
+.PHONY : TrieTree/leetcode720.i
+
+# target to preprocess a source file
+TrieTree/leetcode720.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/leetcode.dir/build.make CMakeFiles/leetcode.dir/TrieTree/leetcode720.cpp.i
+.PHONY : TrieTree/leetcode720.cpp.i
+
+TrieTree/leetcode720.s: TrieTree/leetcode720.cpp.s
+
+.PHONY : TrieTree/leetcode720.s
+
+# target to generate assembly for a file
+TrieTree/leetcode720.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/leetcode.dir/build.make CMakeFiles/leetcode.dir/TrieTree/leetcode720.cpp.s
+.PHONY : TrieTree/leetcode720.cpp.s
 
 main.o: main.cpp.o
 
@@ -635,6 +716,12 @@ help:
 	@echo "... Bit_operation/leetcode260.o"
 	@echo "... Bit_operation/leetcode260.i"
 	@echo "... Bit_operation/leetcode260.s"
+	@echo "... Bit_operation/leetcode50.o"
+	@echo "... Bit_operation/leetcode50.i"
+	@echo "... Bit_operation/leetcode50.s"
+	@echo "... HeapCode/leetcode703.o"
+	@echo "... HeapCode/leetcode703.i"
+	@echo "... HeapCode/leetcode703.s"
 	@echo "... MonotonousStack/leetcode739.o"
 	@echo "... MonotonousStack/leetcode739.i"
 	@echo "... MonotonousStack/leetcode739.s"
@@ -653,12 +740,15 @@ help:
 	@echo "... StringCode/leetcode5.o"
 	@echo "... StringCode/leetcode5.i"
 	@echo "... StringCode/leetcode5.s"
-	@echo "... StringCode/leetcode6.o"
-	@echo "... StringCode/leetcode6.i"
-	@echo "... StringCode/leetcode6.s"
 	@echo "... Tree/offer33.o"
 	@echo "... Tree/offer33.i"
 	@echo "... Tree/offer33.s"
+	@echo "... TrieTree/TrieTree.o"
+	@echo "... TrieTree/TrieTree.i"
+	@echo "... TrieTree/TrieTree.s"
+	@echo "... TrieTree/leetcode720.o"
+	@echo "... TrieTree/leetcode720.i"
+	@echo "... TrieTree/leetcode720.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

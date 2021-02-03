@@ -81,67 +81,67 @@ public:
 
 // stack
 
-//单调栈 序列中无重复值
-vector<vector<int>> getNearLessNoRepeat(vector<int> arr){
-    int n = arr.size();
-    // 记录每个数左边最近的比它小的数和右边最近的比它小的数
-    vector<vector<int>> res(n, vector<int>(2, 0));
-    stack<int> stk;
-    for(int i = 0; i < n; i++){
-        while(!stk.empty() && arr[stk.top()] > arr[i]){
-            int idx = stk.top();
-            stk.pop();
-            int leftLessIdx = stk.empty() ? -1 : stk.top();
-            res[idx][0] = leftLessIdx;
-            res[idx][1] = i;
-        }
-        stk.push(i);
-    }
-    while(!stk.empty()){
-        int idx = stk.top();
-        stk.pop();
-        int leftLessIdx = stk.empty() ? -1 : stk.top();
-        res[idx][0] = leftLessIdx;
-        res[idx][1] = -1;
-    }
-    return res;
-}
-
-
-// 单调栈 序列中有重复值
-// 1. aa ->{a, a}， 两个a恰好相邻， 则加入到同一个list
-// 2. a ... a, 中间的被弹走的必然是比a更大的
-vector<vector<int>> getNearLess(vector<int> arr){
-    int n = arr.size();
-    vector<vector<int>> res(n, vector<int>(2, 0));
-    stack<vector<int>> stk;
-    for(int i = 0; i < n; i++){
-        while(!stk.empty() && arr[stk.top()[0]] > arr[i]){
-            vector<int> popIs = stk.top();
-            stk.pop();
-            int leftLessIdx = stk.empty() ? -1 : stk.top().back();
-            for(auto popI: popIs){
-                res[popI][0] = leftLessIdx;
-                res[popI][1] = i;
-            }
-        }
-        if(!stk.empty() && arr[stk.top()[0]] == arr[i]){
-            stk.top().push_back(i);
-        }else{
-            vector<int> pushLs{i};
-            stk.push(pushLs);
-        }
-    }
-    while(!stk.empty()){
-        vector<int> popLs = stk.top();
-        stk.pop();
-        for(auto popI : popLs){
-            int leftLessIdx = stk.empty() ? -1 : stk.top().back();
-            res[popI][0] = leftLessIdx;
-            res[popI][1] = -1;
-        }
-    }
-    return res;
-}
+////单调栈 序列中无重复值
+//vector<vector<int>> getNearLessNoRepeat(vector<int> arr){
+//    int n = arr.size();
+//    // 记录每个数左边最近的比它小的数和右边最近的比它小的数
+//    vector<vector<int>> res(n, vector<int>(2, 0));
+//    stack<int> stk;
+//    for(int i = 0; i < n; i++){
+//        while(!stk.empty() && arr[stk.top()] > arr[i]){
+//            int idx = stk.top();
+//            stk.pop();
+//            int leftLessIdx = stk.empty() ? -1 : stk.top();
+//            res[idx][0] = leftLessIdx;
+//            res[idx][1] = i;
+//        }
+//        stk.push(i);
+//    }
+//    while(!stk.empty()){
+//        int idx = stk.top();
+//        stk.pop();
+//        int leftLessIdx = stk.empty() ? -1 : stk.top();
+//        res[idx][0] = leftLessIdx;
+//        res[idx][1] = -1;
+//    }
+//    return res;
+//}
+//
+//
+//// 单调栈 序列中有重复值
+//// 1. aa ->{a, a}， 两个a恰好相邻， 则加入到同一个list
+//// 2. a ... a, 中间的被弹走的必然是比a更大的
+//vector<vector<int>> getNearLess(vector<int> arr){
+//    int n = arr.size();
+//    vector<vector<int>> res(n, vector<int>(2, 0));
+//    stack<vector<int>> stk;
+//    for(int i = 0; i < n; i++){
+//        while(!stk.empty() && arr[stk.top()[0]] > arr[i]){
+//            vector<int> popIs = stk.top();
+//            stk.pop();
+//            int leftLessIdx = stk.empty() ? -1 : stk.top().back();
+//            for(auto popI: popIs){
+//                res[popI][0] = leftLessIdx;
+//                res[popI][1] = i;
+//            }
+//        }
+//        if(!stk.empty() && arr[stk.top()[0]] == arr[i]){
+//            stk.top().push_back(i);
+//        }else{
+//            vector<int> pushLs{i};
+//            stk.push(pushLs);
+//        }
+//    }
+//    while(!stk.empty()){
+//        vector<int> popLs = stk.top();
+//        stk.pop();
+//        for(auto popI : popLs){
+//            int leftLessIdx = stk.empty() ? -1 : stk.top().back();
+//            res[popI][0] = leftLessIdx;
+//            res[popI][1] = -1;
+//        }
+//    }
+//    return res;
+//}
 
 #endif //LEETCODE_COMMON_H
