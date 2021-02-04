@@ -53,6 +53,9 @@ CMakeFiles/leetcode.dir/Tree/offer33.cpp.o: ../common.h
 
 CMakeFiles/leetcode.dir/TrieTree/TrieTree.cpp.o: ../TrieTree/TrieTree.cpp
 
+CMakeFiles/leetcode.dir/TrieTree/leetcode648.cpp.o: ../TrieTree/leetcode648.cpp
+CMakeFiles/leetcode.dir/TrieTree/leetcode648.cpp.o: ../common.h
+
 CMakeFiles/leetcode.dir/TrieTree/leetcode720.cpp.o: ../TrieTree/leetcode720.cpp
 CMakeFiles/leetcode.dir/TrieTree/leetcode720.cpp.o: ../common.h
 

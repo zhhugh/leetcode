@@ -17,6 +17,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/leetcode.dir/StringCode/leetcode5.cpp.o"
   "CMakeFiles/leetcode.dir/Tree/offer33.cpp.o"
   "CMakeFiles/leetcode.dir/TrieTree/TrieTree.cpp.o"
+  "CMakeFiles/leetcode.dir/TrieTree/leetcode648.cpp.o"
   "CMakeFiles/leetcode.dir/TrieTree/leetcode720.cpp.o"
   "CMakeFiles/leetcode.dir/main.cpp.o"
   "leetcode"

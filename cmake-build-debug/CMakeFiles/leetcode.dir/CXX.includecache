@@ -6,6 +6,10 @@
 
 #IncludeRegexTransform: 
 
+/Users/zhouhan/githubProject/leetcode/TrieTree/leetcode648.cpp
+../common.h
+/Users/zhouhan/githubProject/leetcode/common.h
+
 /Users/zhouhan/githubProject/leetcode/TrieTree/leetcode720.cpp
 ../common.h
 /Users/zhouhan/githubProject/leetcode/common.h

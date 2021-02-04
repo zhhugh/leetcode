@@ -132,6 +132,9 @@
 		<Unit filename="/Users/zhouhan/githubProject/leetcode/TrieTree/TrieTree.cpp">
 			<Option target="leetcode"/>
 		</Unit>
+		<Unit filename="/Users/zhouhan/githubProject/leetcode/TrieTree/leetcode648.cpp">
+			<Option target="leetcode"/>
+		</Unit>
 		<Unit filename="/Users/zhouhan/githubProject/leetcode/TrieTree/leetcode720.cpp">
 			<Option target="leetcode"/>
 		</Unit>

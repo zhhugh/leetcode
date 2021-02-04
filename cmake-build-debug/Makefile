@@ -629,6 +629,33 @@ TrieTree/TrieTree.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/leetcode.dir/build.make CMakeFiles/leetcode.dir/TrieTree/TrieTree.cpp.s
 .PHONY : TrieTree/TrieTree.cpp.s
 
+TrieTree/leetcode648.o: TrieTree/leetcode648.cpp.o
+
+.PHONY : TrieTree/leetcode648.o
+
+# target to build an object file
+TrieTree/leetcode648.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/leetcode.dir/build.make CMakeFiles/leetcode.dir/TrieTree/leetcode648.cpp.o
+.PHONY : TrieTree/leetcode648.cpp.o
+
+TrieTree/leetcode648.i: TrieTree/leetcode648.cpp.i
+
+.PHONY : TrieTree/leetcode648.i
+
+# target to preprocess a source file
+TrieTree/leetcode648.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/leetcode.dir/build.make CMakeFiles/leetcode.dir/TrieTree/leetcode648.cpp.i
+.PHONY : TrieTree/leetcode648.cpp.i
+
+TrieTree/leetcode648.s: TrieTree/leetcode648.cpp.s
+
+.PHONY : TrieTree/leetcode648.s
+
+# target to generate assembly for a file
+TrieTree/leetcode648.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/leetcode.dir/build.make CMakeFiles/leetcode.dir/TrieTree/leetcode648.cpp.s
+.PHONY : TrieTree/leetcode648.cpp.s
+
 TrieTree/leetcode720.o: TrieTree/leetcode720.cpp.o
 
 .PHONY : TrieTree/leetcode720.o
@@ -746,6 +773,9 @@ help:
 	@echo "... TrieTree/TrieTree.o"
 	@echo "... TrieTree/TrieTree.i"
 	@echo "... TrieTree/TrieTree.s"
+	@echo "... TrieTree/leetcode648.o"
+	@echo "... TrieTree/leetcode648.i"
+	@echo "... TrieTree/leetcode648.s"
 	@echo "... TrieTree/leetcode720.o"
 	@echo "... TrieTree/leetcode720.i"
 	@echo "... TrieTree/leetcode720.s"
