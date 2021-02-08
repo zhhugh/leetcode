@@ -440,6 +440,33 @@ LinkList/leetcode340.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/leetcode.dir/build.make CMakeFiles/leetcode.dir/LinkList/leetcode340.cpp.s
 .PHONY : LinkList/leetcode340.cpp.s
 
+LinkList/leetcode445.o: LinkList/leetcode445.cpp.o
+
+.PHONY : LinkList/leetcode445.o
+
+# target to build an object file
+LinkList/leetcode445.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/leetcode.dir/build.make CMakeFiles/leetcode.dir/LinkList/leetcode445.cpp.o
+.PHONY : LinkList/leetcode445.cpp.o
+
+LinkList/leetcode445.i: LinkList/leetcode445.cpp.i
+
+.PHONY : LinkList/leetcode445.i
+
+# target to preprocess a source file
+LinkList/leetcode445.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/leetcode.dir/build.make CMakeFiles/leetcode.dir/LinkList/leetcode445.cpp.i
+.PHONY : LinkList/leetcode445.cpp.i
+
+LinkList/leetcode445.s: LinkList/leetcode445.cpp.s
+
+.PHONY : LinkList/leetcode445.s
+
+# target to generate assembly for a file
+LinkList/leetcode445.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/leetcode.dir/build.make CMakeFiles/leetcode.dir/LinkList/leetcode445.cpp.s
+.PHONY : LinkList/leetcode445.cpp.s
+
 LinkList/leetcode61.o: LinkList/leetcode61.cpp.o
 
 .PHONY : LinkList/leetcode61.o
@@ -860,6 +887,9 @@ help:
 	@echo "... LinkList/leetcode340.o"
 	@echo "... LinkList/leetcode340.i"
 	@echo "... LinkList/leetcode340.s"
+	@echo "... LinkList/leetcode445.o"
+	@echo "... LinkList/leetcode445.i"
+	@echo "... LinkList/leetcode445.s"
 	@echo "... LinkList/leetcode61.o"
 	@echo "... LinkList/leetcode61.i"
 	@echo "... LinkList/leetcode61.s"
