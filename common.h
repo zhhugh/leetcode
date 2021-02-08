@@ -145,4 +145,12 @@ public:
 //    return res;
 //}
 
+
+// 链表节点
+struct ListNode {
+         int val;
+         ListNode *next;
+         ListNode(int x) : val(x), next(NULL) {}
+     };
+
 #endif //LEETCODE_COMMON_H

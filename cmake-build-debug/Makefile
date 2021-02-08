@@ -413,6 +413,60 @@ HeapCode/leetcode703.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/leetcode.dir/build.make CMakeFiles/leetcode.dir/HeapCode/leetcode703.cpp.s
 .PHONY : HeapCode/leetcode703.cpp.s
 
+LinkList/leetcode340.o: LinkList/leetcode340.cpp.o
+
+.PHONY : LinkList/leetcode340.o
+
+# target to build an object file
+LinkList/leetcode340.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/leetcode.dir/build.make CMakeFiles/leetcode.dir/LinkList/leetcode340.cpp.o
+.PHONY : LinkList/leetcode340.cpp.o
+
+LinkList/leetcode340.i: LinkList/leetcode340.cpp.i
+
+.PHONY : LinkList/leetcode340.i
+
+# target to preprocess a source file
+LinkList/leetcode340.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/leetcode.dir/build.make CMakeFiles/leetcode.dir/LinkList/leetcode340.cpp.i
+.PHONY : LinkList/leetcode340.cpp.i
+
+LinkList/leetcode340.s: LinkList/leetcode340.cpp.s
+
+.PHONY : LinkList/leetcode340.s
+
+# target to generate assembly for a file
+LinkList/leetcode340.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/leetcode.dir/build.make CMakeFiles/leetcode.dir/LinkList/leetcode340.cpp.s
+.PHONY : LinkList/leetcode340.cpp.s
+
+LinkList/leetcode876.o: LinkList/leetcode876.cpp.o
+
+.PHONY : LinkList/leetcode876.o
+
+# target to build an object file
+LinkList/leetcode876.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/leetcode.dir/build.make CMakeFiles/leetcode.dir/LinkList/leetcode876.cpp.o
+.PHONY : LinkList/leetcode876.cpp.o
+
+LinkList/leetcode876.i: LinkList/leetcode876.cpp.i
+
+.PHONY : LinkList/leetcode876.i
+
+# target to preprocess a source file
+LinkList/leetcode876.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/leetcode.dir/build.make CMakeFiles/leetcode.dir/LinkList/leetcode876.cpp.i
+.PHONY : LinkList/leetcode876.cpp.i
+
+LinkList/leetcode876.s: LinkList/leetcode876.cpp.s
+
+.PHONY : LinkList/leetcode876.s
+
+# target to generate assembly for a file
+LinkList/leetcode876.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/leetcode.dir/build.make CMakeFiles/leetcode.dir/LinkList/leetcode876.cpp.s
+.PHONY : LinkList/leetcode876.cpp.s
+
 MonotonousStack/leetcode739.o: MonotonousStack/leetcode739.cpp.o
 
 .PHONY : MonotonousStack/leetcode739.o
@@ -749,6 +803,12 @@ help:
 	@echo "... HeapCode/leetcode703.o"
 	@echo "... HeapCode/leetcode703.i"
 	@echo "... HeapCode/leetcode703.s"
+	@echo "... LinkList/leetcode340.o"
+	@echo "... LinkList/leetcode340.i"
+	@echo "... LinkList/leetcode340.s"
+	@echo "... LinkList/leetcode876.o"
+	@echo "... LinkList/leetcode876.i"
+	@echo "... LinkList/leetcode876.s"
 	@echo "... MonotonousStack/leetcode739.o"
 	@echo "... MonotonousStack/leetcode739.i"
 	@echo "... MonotonousStack/leetcode739.s"
