@@ -30,6 +30,14 @@ CMakeFiles/leetcode.dir/Bit_operation/leetcode50.cpp.o: ../Bit_operation/leetcod
 CMakeFiles/leetcode.dir/HeapCode/leetcode703.cpp.o: ../HeapCode/leetcode703.cpp
 CMakeFiles/leetcode.dir/HeapCode/leetcode703.cpp.o: ../common.h
 
+CMakeFiles/leetcode.dir/LinkList/leetcode340.cpp.o: ../LinkList/leetcode340.cpp
+CMakeFiles/leetcode.dir/LinkList/leetcode340.cpp.o: ../common.h
+
+CMakeFiles/leetcode.dir/LinkList/leetcode61.cpp.o: ../LinkList/leetcode61.cpp
+
+CMakeFiles/leetcode.dir/LinkList/leetcode876.cpp.o: ../LinkList/leetcode876.cpp
+CMakeFiles/leetcode.dir/LinkList/leetcode876.cpp.o: ../common.h
+
 CMakeFiles/leetcode.dir/MonotonousStack/leetcode739.cpp.o: ../MonotonousStack/leetcode739.cpp
 CMakeFiles/leetcode.dir/MonotonousStack/leetcode739.cpp.o: ../common.h
 
