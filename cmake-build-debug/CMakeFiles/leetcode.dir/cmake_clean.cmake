@@ -9,6 +9,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/leetcode.dir/Bit_operation/leetcode260.cpp.o"
   "CMakeFiles/leetcode.dir/Bit_operation/leetcode50.cpp.o"
   "CMakeFiles/leetcode.dir/HeapCode/leetcode703.cpp.o"
+  "CMakeFiles/leetcode.dir/LinkList/leetcode24.cpp.o"
   "CMakeFiles/leetcode.dir/LinkList/leetcode340.cpp.o"
   "CMakeFiles/leetcode.dir/LinkList/leetcode445.cpp.o"
   "CMakeFiles/leetcode.dir/LinkList/leetcode61.cpp.o"
