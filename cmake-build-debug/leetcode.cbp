@@ -123,6 +123,9 @@
 		<Unit filename="/Users/zhouhan/githubProject/leetcode/LinkList/leetcode61.cpp">
 			<Option target="leetcode"/>
 		</Unit>
+		<Unit filename="/Users/zhouhan/githubProject/leetcode/LinkList/leetcode82.cpp">
+			<Option target="leetcode"/>
+		</Unit>
 		<Unit filename="/Users/zhouhan/githubProject/leetcode/LinkList/leetcode876.cpp">
 			<Option target="leetcode"/>
 		</Unit>
