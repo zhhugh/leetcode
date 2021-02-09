@@ -43,3 +43,37 @@ public:
         return newHead;
     }
 };
+
+class Solution2 {
+public:
+    Node* copyRandomList(Node* head) {
+        if(head == nullptr){
+            return nullptr;
+        }
+        // 给每个结点后面加上一个副本
+        Node *cur = head;
+        while(cur != nullptr){
+            Node *next = cur->next;
+            cur->next = new Node(cur->val);
+            cur->next->next = next;
+            cur = next;
+        }
+        // 设置副本的random结点
+        cur = head;
+        while(cur != nullptr){
+            Node *copyNode = cur->next;
+            copyNode->random = cur->random == nullptr ? nullptr : cur->random->next;
+            cur = cur->next->next;
+        }
+        // split 将原链表与副本分离开
+        cur = head;
+        Node *newHead = head->next;
+        while(cur != nullptr){
+            Node *copyNode = cur->next;
+            cur->next = copyNode->next;
+            copyNode->next = copyNode->next == nullptr? nullptr : copyNode->next->next;
+            cur = cur->next;
+        }
+        return newHead;
+    }
+};
