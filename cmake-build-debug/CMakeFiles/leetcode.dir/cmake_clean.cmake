@@ -24,6 +24,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/leetcode.dir/SlidingWindow/offer59_I.cpp.o"
   "CMakeFiles/leetcode.dir/SortCode/MergeSort.cpp.o"
   "CMakeFiles/leetcode.dir/StringCode/leetcode5.cpp.o"
+  "CMakeFiles/leetcode.dir/StringCode/leetcode567.cpp.o"
   "CMakeFiles/leetcode.dir/Tree/offer33.cpp.o"
   "CMakeFiles/leetcode.dir/TrieTree/TrieTree.cpp.o"
   "CMakeFiles/leetcode.dir/TrieTree/leetcode648.cpp.o"

@@ -153,6 +153,9 @@
 		<Unit filename="/Users/zhouhan/githubProject/leetcode/StringCode/leetcode5.cpp">
 			<Option target="leetcode"/>
 		</Unit>
+		<Unit filename="/Users/zhouhan/githubProject/leetcode/StringCode/leetcode567.cpp">
+			<Option target="leetcode"/>
+		</Unit>
 		<Unit filename="/Users/zhouhan/githubProject/leetcode/Tree/offer33.cpp">
 			<Option target="leetcode"/>
 		</Unit>

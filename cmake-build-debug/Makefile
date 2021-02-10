@@ -818,6 +818,33 @@ StringCode/leetcode5.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/leetcode.dir/build.make CMakeFiles/leetcode.dir/StringCode/leetcode5.cpp.s
 .PHONY : StringCode/leetcode5.cpp.s
 
+StringCode/leetcode567.o: StringCode/leetcode567.cpp.o
+
+.PHONY : StringCode/leetcode567.o
+
+# target to build an object file
+StringCode/leetcode567.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/leetcode.dir/build.make CMakeFiles/leetcode.dir/StringCode/leetcode567.cpp.o
+.PHONY : StringCode/leetcode567.cpp.o
+
+StringCode/leetcode567.i: StringCode/leetcode567.cpp.i
+
+.PHONY : StringCode/leetcode567.i
+
+# target to preprocess a source file
+StringCode/leetcode567.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/leetcode.dir/build.make CMakeFiles/leetcode.dir/StringCode/leetcode567.cpp.i
+.PHONY : StringCode/leetcode567.cpp.i
+
+StringCode/leetcode567.s: StringCode/leetcode567.cpp.s
+
+.PHONY : StringCode/leetcode567.s
+
+# target to generate assembly for a file
+StringCode/leetcode567.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/leetcode.dir/build.make CMakeFiles/leetcode.dir/StringCode/leetcode567.cpp.s
+.PHONY : StringCode/leetcode567.cpp.s
+
 Tree/offer33.o: Tree/offer33.cpp.o
 
 .PHONY : Tree/offer33.o
@@ -1037,6 +1064,9 @@ help:
 	@echo "... StringCode/leetcode5.o"
 	@echo "... StringCode/leetcode5.i"
 	@echo "... StringCode/leetcode5.s"
+	@echo "... StringCode/leetcode567.o"
+	@echo "... StringCode/leetcode567.i"
+	@echo "... StringCode/leetcode567.s"
 	@echo "... Tree/offer33.o"
 	@echo "... Tree/offer33.i"
 	@echo "... Tree/offer33.s"
