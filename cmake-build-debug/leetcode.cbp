@@ -144,6 +144,9 @@
 		<Unit filename="/Users/zhouhan/githubProject/leetcode/SlidingWindow/leetcode1438.cpp">
 			<Option target="leetcode"/>
 		</Unit>
+		<Unit filename="/Users/zhouhan/githubProject/leetcode/SlidingWindow/leetcode480.cpp">
+			<Option target="leetcode"/>
+		</Unit>
 		<Unit filename="/Users/zhouhan/githubProject/leetcode/SlidingWindow/offer59_I.cpp">
 			<Option target="leetcode"/>
 		</Unit>
@@ -168,7 +171,25 @@
 		<Unit filename="/Users/zhouhan/githubProject/leetcode/TrieTree/leetcode720.cpp">
 			<Option target="leetcode"/>
 		</Unit>
+		<Unit filename="/Users/zhouhan/githubProject/leetcode/UnionFind/leetcode765.cpp">
+			<Option target="leetcode"/>
+		</Unit>
+		<Unit filename="/Users/zhouhan/githubProject/leetcode/array/leetcode119.cpp">
+			<Option target="leetcode"/>
+		</Unit>
+		<Unit filename="/Users/zhouhan/githubProject/leetcode/array/leetcode448.cpp">
+			<Option target="leetcode"/>
+		</Unit>
+		<Unit filename="/Users/zhouhan/githubProject/leetcode/array/leetcode888.cpp">
+			<Option target="leetcode"/>
+		</Unit>
 		<Unit filename="/Users/zhouhan/githubProject/leetcode/common.h">
+			<Option target="leetcode"/>
+		</Unit>
+		<Unit filename="/Users/zhouhan/githubProject/leetcode/leetCodeContest/1.cpp">
+			<Option target="leetcode"/>
+		</Unit>
+		<Unit filename="/Users/zhouhan/githubProject/leetcode/leetCodeContest/2.cpp">
 			<Option target="leetcode"/>
 		</Unit>
 		<Unit filename="/Users/zhouhan/githubProject/leetcode/main.cpp">

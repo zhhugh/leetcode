@@ -1,15 +1,12 @@
 
-#include "LinkList//leetcode143.cpp"
 #include <iostream>
+#include "leetCodeContest/228/2.cpp"
 using namespace std;
 
 int main(){
-    ListNode *head = new ListNode(1);
-    head->next = new ListNode(2);
-    head->next->next = new ListNode(3);
-    head->next->next->next = new ListNode(4);
     Solution s;
-    s.reorderList(head);
+    int n = s.countHomogenous("zzzzz");
+    cout << n << endl;
     return 0;
 }
 

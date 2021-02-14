@@ -737,6 +737,33 @@ SlidingWindow/leetcode1438.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/leetcode.dir/build.make CMakeFiles/leetcode.dir/SlidingWindow/leetcode1438.cpp.s
 .PHONY : SlidingWindow/leetcode1438.cpp.s
 
+SlidingWindow/leetcode480.o: SlidingWindow/leetcode480.cpp.o
+
+.PHONY : SlidingWindow/leetcode480.o
+
+# target to build an object file
+SlidingWindow/leetcode480.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/leetcode.dir/build.make CMakeFiles/leetcode.dir/SlidingWindow/leetcode480.cpp.o
+.PHONY : SlidingWindow/leetcode480.cpp.o
+
+SlidingWindow/leetcode480.i: SlidingWindow/leetcode480.cpp.i
+
+.PHONY : SlidingWindow/leetcode480.i
+
+# target to preprocess a source file
+SlidingWindow/leetcode480.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/leetcode.dir/build.make CMakeFiles/leetcode.dir/SlidingWindow/leetcode480.cpp.i
+.PHONY : SlidingWindow/leetcode480.cpp.i
+
+SlidingWindow/leetcode480.s: SlidingWindow/leetcode480.cpp.s
+
+.PHONY : SlidingWindow/leetcode480.s
+
+# target to generate assembly for a file
+SlidingWindow/leetcode480.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/leetcode.dir/build.make CMakeFiles/leetcode.dir/SlidingWindow/leetcode480.cpp.s
+.PHONY : SlidingWindow/leetcode480.cpp.s
+
 SlidingWindow/offer59_I.o: SlidingWindow/offer59_I.cpp.o
 
 .PHONY : SlidingWindow/offer59_I.o
@@ -953,6 +980,168 @@ TrieTree/leetcode720.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/leetcode.dir/build.make CMakeFiles/leetcode.dir/TrieTree/leetcode720.cpp.s
 .PHONY : TrieTree/leetcode720.cpp.s
 
+UnionFind/leetcode765.o: UnionFind/leetcode765.cpp.o
+
+.PHONY : UnionFind/leetcode765.o
+
+# target to build an object file
+UnionFind/leetcode765.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/leetcode.dir/build.make CMakeFiles/leetcode.dir/UnionFind/leetcode765.cpp.o
+.PHONY : UnionFind/leetcode765.cpp.o
+
+UnionFind/leetcode765.i: UnionFind/leetcode765.cpp.i
+
+.PHONY : UnionFind/leetcode765.i
+
+# target to preprocess a source file
+UnionFind/leetcode765.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/leetcode.dir/build.make CMakeFiles/leetcode.dir/UnionFind/leetcode765.cpp.i
+.PHONY : UnionFind/leetcode765.cpp.i
+
+UnionFind/leetcode765.s: UnionFind/leetcode765.cpp.s
+
+.PHONY : UnionFind/leetcode765.s
+
+# target to generate assembly for a file
+UnionFind/leetcode765.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/leetcode.dir/build.make CMakeFiles/leetcode.dir/UnionFind/leetcode765.cpp.s
+.PHONY : UnionFind/leetcode765.cpp.s
+
+array/leetcode119.o: array/leetcode119.cpp.o
+
+.PHONY : array/leetcode119.o
+
+# target to build an object file
+array/leetcode119.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/leetcode.dir/build.make CMakeFiles/leetcode.dir/array/leetcode119.cpp.o
+.PHONY : array/leetcode119.cpp.o
+
+array/leetcode119.i: array/leetcode119.cpp.i
+
+.PHONY : array/leetcode119.i
+
+# target to preprocess a source file
+array/leetcode119.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/leetcode.dir/build.make CMakeFiles/leetcode.dir/array/leetcode119.cpp.i
+.PHONY : array/leetcode119.cpp.i
+
+array/leetcode119.s: array/leetcode119.cpp.s
+
+.PHONY : array/leetcode119.s
+
+# target to generate assembly for a file
+array/leetcode119.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/leetcode.dir/build.make CMakeFiles/leetcode.dir/array/leetcode119.cpp.s
+.PHONY : array/leetcode119.cpp.s
+
+array/leetcode448.o: array/leetcode448.cpp.o
+
+.PHONY : array/leetcode448.o
+
+# target to build an object file
+array/leetcode448.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/leetcode.dir/build.make CMakeFiles/leetcode.dir/array/leetcode448.cpp.o
+.PHONY : array/leetcode448.cpp.o
+
+array/leetcode448.i: array/leetcode448.cpp.i
+
+.PHONY : array/leetcode448.i
+
+# target to preprocess a source file
+array/leetcode448.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/leetcode.dir/build.make CMakeFiles/leetcode.dir/array/leetcode448.cpp.i
+.PHONY : array/leetcode448.cpp.i
+
+array/leetcode448.s: array/leetcode448.cpp.s
+
+.PHONY : array/leetcode448.s
+
+# target to generate assembly for a file
+array/leetcode448.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/leetcode.dir/build.make CMakeFiles/leetcode.dir/array/leetcode448.cpp.s
+.PHONY : array/leetcode448.cpp.s
+
+array/leetcode888.o: array/leetcode888.cpp.o
+
+.PHONY : array/leetcode888.o
+
+# target to build an object file
+array/leetcode888.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/leetcode.dir/build.make CMakeFiles/leetcode.dir/array/leetcode888.cpp.o
+.PHONY : array/leetcode888.cpp.o
+
+array/leetcode888.i: array/leetcode888.cpp.i
+
+.PHONY : array/leetcode888.i
+
+# target to preprocess a source file
+array/leetcode888.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/leetcode.dir/build.make CMakeFiles/leetcode.dir/array/leetcode888.cpp.i
+.PHONY : array/leetcode888.cpp.i
+
+array/leetcode888.s: array/leetcode888.cpp.s
+
+.PHONY : array/leetcode888.s
+
+# target to generate assembly for a file
+array/leetcode888.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/leetcode.dir/build.make CMakeFiles/leetcode.dir/array/leetcode888.cpp.s
+.PHONY : array/leetcode888.cpp.s
+
+leetCodeContest/1.o: leetCodeContest/1.cpp.o
+
+.PHONY : leetCodeContest/1.o
+
+# target to build an object file
+leetCodeContest/1.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/leetcode.dir/build.make CMakeFiles/leetcode.dir/leetCodeContest/1.cpp.o
+.PHONY : leetCodeContest/1.cpp.o
+
+leetCodeContest/1.i: leetCodeContest/1.cpp.i
+
+.PHONY : leetCodeContest/1.i
+
+# target to preprocess a source file
+leetCodeContest/1.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/leetcode.dir/build.make CMakeFiles/leetcode.dir/leetCodeContest/1.cpp.i
+.PHONY : leetCodeContest/1.cpp.i
+
+leetCodeContest/1.s: leetCodeContest/1.cpp.s
+
+.PHONY : leetCodeContest/1.s
+
+# target to generate assembly for a file
+leetCodeContest/1.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/leetcode.dir/build.make CMakeFiles/leetcode.dir/leetCodeContest/1.cpp.s
+.PHONY : leetCodeContest/1.cpp.s
+
+leetCodeContest/2.o: leetCodeContest/2.cpp.o
+
+.PHONY : leetCodeContest/2.o
+
+# target to build an object file
+leetCodeContest/2.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/leetcode.dir/build.make CMakeFiles/leetcode.dir/leetCodeContest/2.cpp.o
+.PHONY : leetCodeContest/2.cpp.o
+
+leetCodeContest/2.i: leetCodeContest/2.cpp.i
+
+.PHONY : leetCodeContest/2.i
+
+# target to preprocess a source file
+leetCodeContest/2.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/leetcode.dir/build.make CMakeFiles/leetcode.dir/leetCodeContest/2.cpp.i
+.PHONY : leetCodeContest/2.cpp.i
+
+leetCodeContest/2.s: leetCodeContest/2.cpp.s
+
+.PHONY : leetCodeContest/2.s
+
+# target to generate assembly for a file
+leetCodeContest/2.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/leetcode.dir/build.make CMakeFiles/leetcode.dir/leetCodeContest/2.cpp.s
+.PHONY : leetCodeContest/2.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -1055,6 +1244,9 @@ help:
 	@echo "... SlidingWindow/leetcode1438.o"
 	@echo "... SlidingWindow/leetcode1438.i"
 	@echo "... SlidingWindow/leetcode1438.s"
+	@echo "... SlidingWindow/leetcode480.o"
+	@echo "... SlidingWindow/leetcode480.i"
+	@echo "... SlidingWindow/leetcode480.s"
 	@echo "... SlidingWindow/offer59_I.o"
 	@echo "... SlidingWindow/offer59_I.i"
 	@echo "... SlidingWindow/offer59_I.s"
@@ -1079,6 +1271,24 @@ help:
 	@echo "... TrieTree/leetcode720.o"
 	@echo "... TrieTree/leetcode720.i"
 	@echo "... TrieTree/leetcode720.s"
+	@echo "... UnionFind/leetcode765.o"
+	@echo "... UnionFind/leetcode765.i"
+	@echo "... UnionFind/leetcode765.s"
+	@echo "... array/leetcode119.o"
+	@echo "... array/leetcode119.i"
+	@echo "... array/leetcode119.s"
+	@echo "... array/leetcode448.o"
+	@echo "... array/leetcode448.i"
+	@echo "... array/leetcode448.s"
+	@echo "... array/leetcode888.o"
+	@echo "... array/leetcode888.i"
+	@echo "... array/leetcode888.s"
+	@echo "... leetCodeContest/1.o"
+	@echo "... leetCodeContest/1.i"
+	@echo "... leetCodeContest/1.s"
+	@echo "... leetCodeContest/2.o"
+	@echo "... leetCodeContest/2.i"
+	@echo "... leetCodeContest/2.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

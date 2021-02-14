@@ -62,6 +62,9 @@ CMakeFiles/leetcode.dir/MonotonousStack/leetcode84.cpp.o: ../common.h
 CMakeFiles/leetcode.dir/SlidingWindow/leetcode1438.cpp.o: ../SlidingWindow/leetcode1438.cpp
 CMakeFiles/leetcode.dir/SlidingWindow/leetcode1438.cpp.o: ../common.h
 
+CMakeFiles/leetcode.dir/SlidingWindow/leetcode480.cpp.o: ../SlidingWindow/leetcode480.cpp
+CMakeFiles/leetcode.dir/SlidingWindow/leetcode480.cpp.o: ../common.h
+
 CMakeFiles/leetcode.dir/SlidingWindow/offer59_I.cpp.o: ../SlidingWindow/offer59_I.cpp
 CMakeFiles/leetcode.dir/SlidingWindow/offer59_I.cpp.o: ../common.h
 
@@ -85,6 +88,25 @@ CMakeFiles/leetcode.dir/TrieTree/leetcode648.cpp.o: ../common.h
 CMakeFiles/leetcode.dir/TrieTree/leetcode720.cpp.o: ../TrieTree/leetcode720.cpp
 CMakeFiles/leetcode.dir/TrieTree/leetcode720.cpp.o: ../common.h
 
-CMakeFiles/leetcode.dir/main.cpp.o: ../LinkList/leetcode143.cpp
+CMakeFiles/leetcode.dir/UnionFind/leetcode765.cpp.o: ../UnionFind/leetcode765.cpp
+CMakeFiles/leetcode.dir/UnionFind/leetcode765.cpp.o: ../common.h
+
+CMakeFiles/leetcode.dir/array/leetcode119.cpp.o: ../array/leetcode119.cpp
+CMakeFiles/leetcode.dir/array/leetcode119.cpp.o: ../common.h
+
+CMakeFiles/leetcode.dir/array/leetcode448.cpp.o: ../array/leetcode448.cpp
+CMakeFiles/leetcode.dir/array/leetcode448.cpp.o: ../common.h
+
+CMakeFiles/leetcode.dir/array/leetcode888.cpp.o: ../array/leetcode888.cpp
+CMakeFiles/leetcode.dir/array/leetcode888.cpp.o: ../common.h
+
+CMakeFiles/leetcode.dir/leetCodeContest/1.cpp.o: ../common.h
+CMakeFiles/leetcode.dir/leetCodeContest/1.cpp.o: ../leetCodeContest/1.cpp
+
+CMakeFiles/leetcode.dir/leetCodeContest/2.cpp.o: ../common.h
+CMakeFiles/leetcode.dir/leetCodeContest/2.cpp.o: ../leetCodeContest/2.cpp
+
+CMakeFiles/leetcode.dir/main.cpp.o: ../common.h
+CMakeFiles/leetcode.dir/main.cpp.o: ../leetCodeContest/2.cpp
 CMakeFiles/leetcode.dir/main.cpp.o: ../main.cpp
 
