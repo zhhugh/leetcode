@@ -710,6 +710,33 @@ LinkList/offer35.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/leetcode.dir/build.make CMakeFiles/leetcode.dir/LinkList/offer35.cpp.s
 .PHONY : LinkList/offer35.cpp.s
 
+Math/leetcode171.o: Math/leetcode171.cpp.o
+
+.PHONY : Math/leetcode171.o
+
+# target to build an object file
+Math/leetcode171.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/leetcode.dir/build.make CMakeFiles/leetcode.dir/Math/leetcode171.cpp.o
+.PHONY : Math/leetcode171.cpp.o
+
+Math/leetcode171.i: Math/leetcode171.cpp.i
+
+.PHONY : Math/leetcode171.i
+
+# target to preprocess a source file
+Math/leetcode171.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/leetcode.dir/build.make CMakeFiles/leetcode.dir/Math/leetcode171.cpp.i
+.PHONY : Math/leetcode171.cpp.i
+
+Math/leetcode171.s: Math/leetcode171.cpp.s
+
+.PHONY : Math/leetcode171.s
+
+# target to generate assembly for a file
+Math/leetcode171.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/leetcode.dir/build.make CMakeFiles/leetcode.dir/Math/leetcode171.cpp.s
+.PHONY : Math/leetcode171.cpp.s
+
 Math/leetcode69.o: Math/leetcode69.cpp.o
 
 .PHONY : Math/leetcode69.o
@@ -1304,6 +1331,33 @@ array/leet566.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/leetcode.dir/build.make CMakeFiles/leetcode.dir/array/leet566.cpp.s
 .PHONY : array/leet566.cpp.s
 
+array/leetcode118.o: array/leetcode118.cpp.o
+
+.PHONY : array/leetcode118.o
+
+# target to build an object file
+array/leetcode118.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/leetcode.dir/build.make CMakeFiles/leetcode.dir/array/leetcode118.cpp.o
+.PHONY : array/leetcode118.cpp.o
+
+array/leetcode118.i: array/leetcode118.cpp.i
+
+.PHONY : array/leetcode118.i
+
+# target to preprocess a source file
+array/leetcode118.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/leetcode.dir/build.make CMakeFiles/leetcode.dir/array/leetcode118.cpp.i
+.PHONY : array/leetcode118.cpp.i
+
+array/leetcode118.s: array/leetcode118.cpp.s
+
+.PHONY : array/leetcode118.s
+
+# target to generate assembly for a file
+array/leetcode118.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/leetcode.dir/build.make CMakeFiles/leetcode.dir/array/leetcode118.cpp.s
+.PHONY : array/leetcode118.cpp.s
+
 array/leetcode119.o: array/leetcode119.cpp.o
 
 .PHONY : array/leetcode119.o
@@ -1682,6 +1736,33 @@ intereview/8_09.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/leetcode.dir/build.make CMakeFiles/leetcode.dir/intereview/8_09.cpp.s
 .PHONY : intereview/8_09.cpp.s
 
+kmp/leetcode28.o: kmp/leetcode28.cpp.o
+
+.PHONY : kmp/leetcode28.o
+
+# target to build an object file
+kmp/leetcode28.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/leetcode.dir/build.make CMakeFiles/leetcode.dir/kmp/leetcode28.cpp.o
+.PHONY : kmp/leetcode28.cpp.o
+
+kmp/leetcode28.i: kmp/leetcode28.cpp.i
+
+.PHONY : kmp/leetcode28.i
+
+# target to preprocess a source file
+kmp/leetcode28.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/leetcode.dir/build.make CMakeFiles/leetcode.dir/kmp/leetcode28.cpp.i
+.PHONY : kmp/leetcode28.cpp.i
+
+kmp/leetcode28.s: kmp/leetcode28.cpp.s
+
+.PHONY : kmp/leetcode28.s
+
+# target to generate assembly for a file
+kmp/leetcode28.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/leetcode.dir/build.make CMakeFiles/leetcode.dir/kmp/leetcode28.cpp.s
+.PHONY : kmp/leetcode28.cpp.s
+
 leetCodeContest/1.o: leetCodeContest/1.cpp.o
 
 .PHONY : leetCodeContest/1.o
@@ -1970,6 +2051,9 @@ help:
 	@echo "... LinkList/offer35.o"
 	@echo "... LinkList/offer35.i"
 	@echo "... LinkList/offer35.s"
+	@echo "... Math/leetcode171.o"
+	@echo "... Math/leetcode171.i"
+	@echo "... Math/leetcode171.s"
 	@echo "... Math/leetcode69.o"
 	@echo "... Math/leetcode69.i"
 	@echo "... Math/leetcode69.s"
@@ -2036,6 +2120,9 @@ help:
 	@echo "... array/leet566.o"
 	@echo "... array/leet566.i"
 	@echo "... array/leet566.s"
+	@echo "... array/leetcode118.o"
+	@echo "... array/leetcode118.i"
+	@echo "... array/leetcode118.s"
 	@echo "... array/leetcode119.o"
 	@echo "... array/leetcode119.i"
 	@echo "... array/leetcode119.s"
@@ -2078,6 +2165,9 @@ help:
 	@echo "... intereview/8_09.o"
 	@echo "... intereview/8_09.i"
 	@echo "... intereview/8_09.s"
+	@echo "... kmp/leetcode28.o"
+	@echo "... kmp/leetcode28.i"
+	@echo "... kmp/leetcode28.s"
 	@echo "... leetCodeContest/1.o"
 	@echo "... leetCodeContest/1.i"
 	@echo "... leetCodeContest/1.s"

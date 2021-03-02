@@ -6,7 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/Users/zhouhan/githubProject/leetcode/Bit_operation/leetcode1178.cpp
+/Users/zhouhan/githubProject/leetcode/Math/leetcode171.cpp
+../common.h
+/Users/zhouhan/githubProject/leetcode/common.h
+
+/Users/zhouhan/githubProject/leetcode/array/leetcode118.cpp
 ../common.h
 /Users/zhouhan/githubProject/leetcode/common.h
 
@@ -27,8 +31,4 @@ unordered_map
 -
 map
 -
-
-/Users/zhouhan/githubProject/leetcode/main.cpp
-Bit_operation/leetcode1178.cpp
-/Users/zhouhan/githubProject/leetcode/Bit_operation/leetcode1178.cpp
 

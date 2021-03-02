@@ -141,6 +141,9 @@
 		<Unit filename="/Users/zhouhan/githubProject/leetcode/LinkList/offer35.cpp">
 			<Option target="leetcode"/>
 		</Unit>
+		<Unit filename="/Users/zhouhan/githubProject/leetcode/Math/leetcode171.cpp">
+			<Option target="leetcode"/>
+		</Unit>
 		<Unit filename="/Users/zhouhan/githubProject/leetcode/Math/leetcode69.cpp">
 			<Option target="leetcode"/>
 		</Unit>
@@ -207,6 +210,9 @@
 		<Unit filename="/Users/zhouhan/githubProject/leetcode/array/leet566.cpp">
 			<Option target="leetcode"/>
 		</Unit>
+		<Unit filename="/Users/zhouhan/githubProject/leetcode/array/leetcode118.cpp">
+			<Option target="leetcode"/>
+		</Unit>
 		<Unit filename="/Users/zhouhan/githubProject/leetcode/array/leetcode119.cpp">
 			<Option target="leetcode"/>
 		</Unit>
@@ -250,6 +256,9 @@
 			<Option target="leetcode"/>
 		</Unit>
 		<Unit filename="/Users/zhouhan/githubProject/leetcode/intereview/8_09.cpp">
+			<Option target="leetcode"/>
+		</Unit>
+		<Unit filename="/Users/zhouhan/githubProject/leetcode/kmp/leetcode28.cpp">
 			<Option target="leetcode"/>
 		</Unit>
 		<Unit filename="/Users/zhouhan/githubProject/leetcode/leetCodeContest/1.cpp">
