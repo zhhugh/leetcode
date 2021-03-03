@@ -386,6 +386,33 @@ Bit_operation/leetcode260.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/leetcode.dir/build.make CMakeFiles/leetcode.dir/Bit_operation/leetcode260.cpp.s
 .PHONY : Bit_operation/leetcode260.cpp.s
 
+Bit_operation/leetcode338.o: Bit_operation/leetcode338.cpp.o
+
+.PHONY : Bit_operation/leetcode338.o
+
+# target to build an object file
+Bit_operation/leetcode338.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/leetcode.dir/build.make CMakeFiles/leetcode.dir/Bit_operation/leetcode338.cpp.o
+.PHONY : Bit_operation/leetcode338.cpp.o
+
+Bit_operation/leetcode338.i: Bit_operation/leetcode338.cpp.i
+
+.PHONY : Bit_operation/leetcode338.i
+
+# target to preprocess a source file
+Bit_operation/leetcode338.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/leetcode.dir/build.make CMakeFiles/leetcode.dir/Bit_operation/leetcode338.cpp.i
+.PHONY : Bit_operation/leetcode338.cpp.i
+
+Bit_operation/leetcode338.s: Bit_operation/leetcode338.cpp.s
+
+.PHONY : Bit_operation/leetcode338.s
+
+# target to generate assembly for a file
+Bit_operation/leetcode338.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/leetcode.dir/build.make CMakeFiles/leetcode.dir/Bit_operation/leetcode338.cpp.s
+.PHONY : Bit_operation/leetcode338.cpp.s
+
 Bit_operation/leetcode50.o: Bit_operation/leetcode50.cpp.o
 
 .PHONY : Bit_operation/leetcode50.o
@@ -1385,6 +1412,33 @@ array/leetcode119.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/leetcode.dir/build.make CMakeFiles/leetcode.dir/array/leetcode119.cpp.s
 .PHONY : array/leetcode119.cpp.s
 
+array/leetcode304.o: array/leetcode304.cpp.o
+
+.PHONY : array/leetcode304.o
+
+# target to build an object file
+array/leetcode304.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/leetcode.dir/build.make CMakeFiles/leetcode.dir/array/leetcode304.cpp.o
+.PHONY : array/leetcode304.cpp.o
+
+array/leetcode304.i: array/leetcode304.cpp.i
+
+.PHONY : array/leetcode304.i
+
+# target to preprocess a source file
+array/leetcode304.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/leetcode.dir/build.make CMakeFiles/leetcode.dir/array/leetcode304.cpp.i
+.PHONY : array/leetcode304.cpp.i
+
+array/leetcode304.s: array/leetcode304.cpp.s
+
+.PHONY : array/leetcode304.s
+
+# target to generate assembly for a file
+array/leetcode304.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/leetcode.dir/build.make CMakeFiles/leetcode.dir/array/leetcode304.cpp.s
+.PHONY : array/leetcode304.cpp.s
+
 array/leetcode448.o: array/leetcode448.cpp.o
 
 .PHONY : array/leetcode448.o
@@ -2015,6 +2069,9 @@ help:
 	@echo "... Bit_operation/leetcode260.o"
 	@echo "... Bit_operation/leetcode260.i"
 	@echo "... Bit_operation/leetcode260.s"
+	@echo "... Bit_operation/leetcode338.o"
+	@echo "... Bit_operation/leetcode338.i"
+	@echo "... Bit_operation/leetcode338.s"
 	@echo "... Bit_operation/leetcode50.o"
 	@echo "... Bit_operation/leetcode50.i"
 	@echo "... Bit_operation/leetcode50.s"
@@ -2126,6 +2183,9 @@ help:
 	@echo "... array/leetcode119.o"
 	@echo "... array/leetcode119.i"
 	@echo "... array/leetcode119.s"
+	@echo "... array/leetcode304.o"
+	@echo "... array/leetcode304.i"
+	@echo "... array/leetcode304.s"
 	@echo "... array/leetcode448.o"
 	@echo "... array/leetcode448.i"
 	@echo "... array/leetcode448.s"

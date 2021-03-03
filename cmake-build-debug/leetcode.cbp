@@ -105,6 +105,9 @@
 		<Unit filename="/Users/zhouhan/githubProject/leetcode/Bit_operation/leetcode260.cpp">
 			<Option target="leetcode"/>
 		</Unit>
+		<Unit filename="/Users/zhouhan/githubProject/leetcode/Bit_operation/leetcode338.cpp">
+			<Option target="leetcode"/>
+		</Unit>
 		<Unit filename="/Users/zhouhan/githubProject/leetcode/Bit_operation/leetcode50.cpp">
 			<Option target="leetcode"/>
 		</Unit>
@@ -214,6 +217,9 @@
 			<Option target="leetcode"/>
 		</Unit>
 		<Unit filename="/Users/zhouhan/githubProject/leetcode/array/leetcode119.cpp">
+			<Option target="leetcode"/>
+		</Unit>
+		<Unit filename="/Users/zhouhan/githubProject/leetcode/array/leetcode304.cpp">
 			<Option target="leetcode"/>
 		</Unit>
 		<Unit filename="/Users/zhouhan/githubProject/leetcode/array/leetcode448.cpp">

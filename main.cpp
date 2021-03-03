@@ -1,13 +1,7 @@
-#include "Bit_operation/leetcode1178.cpp"
-
+#include "common.h"
 int main(){
-    Solution s;
-    vector<string> w{"aaaa","asas","able","ability","actt","actor","access"};
-    vector<string> p{"gaswxyz"};
-    vector<int> ans = s.findNumOfValidWords(w, p);
-    for(auto i: ans){
-        cout << i << " ";
-    }
-    cout << endl;
+    int n;
+    scanf("%d", &n);
+    cout << n << endl;
     return 0;
 }
