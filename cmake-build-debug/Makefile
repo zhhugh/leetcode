@@ -764,6 +764,33 @@ Math/leetcode171.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/leetcode.dir/build.make CMakeFiles/leetcode.dir/Math/leetcode171.cpp.s
 .PHONY : Math/leetcode171.cpp.s
 
+Math/leetcode172.o: Math/leetcode172.cpp.o
+
+.PHONY : Math/leetcode172.o
+
+# target to build an object file
+Math/leetcode172.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/leetcode.dir/build.make CMakeFiles/leetcode.dir/Math/leetcode172.cpp.o
+.PHONY : Math/leetcode172.cpp.o
+
+Math/leetcode172.i: Math/leetcode172.cpp.i
+
+.PHONY : Math/leetcode172.i
+
+# target to preprocess a source file
+Math/leetcode172.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/leetcode.dir/build.make CMakeFiles/leetcode.dir/Math/leetcode172.cpp.i
+.PHONY : Math/leetcode172.cpp.i
+
+Math/leetcode172.s: Math/leetcode172.cpp.s
+
+.PHONY : Math/leetcode172.s
+
+# target to generate assembly for a file
+Math/leetcode172.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/leetcode.dir/build.make CMakeFiles/leetcode.dir/Math/leetcode172.cpp.s
+.PHONY : Math/leetcode172.cpp.s
+
 Math/leetcode69.o: Math/leetcode69.cpp.o
 
 .PHONY : Math/leetcode69.o
@@ -2111,6 +2138,9 @@ help:
 	@echo "... Math/leetcode171.o"
 	@echo "... Math/leetcode171.i"
 	@echo "... Math/leetcode171.s"
+	@echo "... Math/leetcode172.o"
+	@echo "... Math/leetcode172.i"
+	@echo "... Math/leetcode172.s"
 	@echo "... Math/leetcode69.o"
 	@echo "... Math/leetcode69.i"
 	@echo "... Math/leetcode69.s"

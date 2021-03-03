@@ -5,16 +5,15 @@
 ## 滑动窗口和单调栈
 
 - 滑动窗口（单调双端队列求滑动窗口的最小值）
+  - 保持双端队列始终是单调的，头部的下标是没有过期的
 - 单调栈
   - 有重复值
   - 无重复值
-- 求子数组和 ：前缀和数组
 
 
 
 ## 动态规划与蓄水池算法
 
-- 三维动态规划 
 - 递推公式转化为矩阵乘法 快速幂
 - 蓄水池算法
   - 在任何时候，保证已经吐出袋子的球在袋子中的的概率相等，p =  n / k， n为袋子容量， k为当前已经吐出球的最大编号
@@ -51,7 +50,97 @@
   - leetcode648
   - Leetcode720
 
+- 代码
 
+```cpp
+
+class Node{
+public:
+    int pass;
+    int end;
+    vector<Node *> nexts;
+
+    Node(): pass(0), end(0), nexts(vector<Node *>(26, NULL)){
+    };
+};
+
+class TrieTree{
+public:
+    Node * root;
+    TrieTree() : root(new Node()){};
+    void Insert(string word){
+        if(word.empty()){
+            return;
+        }
+        int len = word.size();
+        int path = 0;
+        Node *node = root;
+        node->pass ++;
+        for(int i = 0; i < len; i++){
+            path = word[i] - 'a';
+            if(node->nexts[path] == nullptr){
+                node->nexts[path] = new Node();
+            }
+            node = node->nexts[path];
+            node->pass++;
+        }
+        node->end ++;
+    }
+    // 删除word
+    void Delete(string word){
+        if(!Search(word)) return;
+        Node *node = root;
+        node->pass--;
+        int len = word.size();
+        int path = 0;
+        for(int i = 0; i < len; i++){
+            path = word[i] - 'a';
+            if(--node->nexts[path]->pass == 0){
+                // 这里不能这么简单的处理,可能会造成内存溢出
+                node->nexts[path] = nullptr;
+                return;
+            }
+            node = node->nexts[path];
+        }
+        node->end--;
+    }
+
+
+    // 查找前缀树中有有几个word
+    int Search(string word){
+        Node *node = root;
+        int path = 0;
+        int len = word.size();
+        for(int i = 0; i < len; i++){
+            path = word[i] - 'a';
+            if(node->nexts[path] == nullptr){
+                return 0;
+            }
+            node = node->nexts[path];
+        }
+        return node->end;
+    }
+
+    // 查找前缀出现的次数
+    int PrefixNumber(string pre){
+        if(pre.empty()){
+            return 0;
+        }
+        int len = pre.size();
+        Node *node = root;
+        int path = 0;
+        for(int i = 0; i < len; i++){
+            path = pre[i] - 'a';
+            if(node->nexts[path] == nullptr){
+                return 0;
+            }
+            node = node->nexts[path];
+        }
+        return node->pass;
+    }
+
+};
+```
 
 
 
@@ -94,7 +183,7 @@
 ## 链表
 
 - 链表问题
-  - 使用容器
+  - 使用容器（方便）
   - 快慢指针
     - 返回中点（上中点）
       - 如果fast最后把节点走完了，那么slow走的节点数是fast的一半
@@ -120,7 +209,7 @@
 
 - 只给当前结点，删除当前结点
 
-  - 不行，内存区域不一样，删服务器怎么半
+  - 不行，内存区域不一样，如果结点是服务器的话更加不行
 
   
 
@@ -387,4 +476,26 @@ dp[i] = dp[i >> 1] + (i & 1)
 ```cpp
 dp[i] = dp[i & (i - 1)] + 1
 ```
+
+
+
+## n!中0的个数
+
+在$1 * 2 * 3 *...*n$ 中， 如果有 $1$ 个 $10$ ， 则多一个$0$, 也就是说，有一个 $2$ 和一个 $5$ 就可以多出一个$0$, 并且每五个数就有一个 $5$, 每过 $2$ 个数， 就有一个2， 所以要知道 $1 * 2 * 3 *...*n$ 中有几个5。但是每过 $25$ 个数就会多出一个$5$， 同理， 每过 $5^x$ 个数， 就会新增 $x$ 个5， 所以可以先加上每5步新增的5， 再加上剩下的每25步新增的5， 依次类推。
+
+```cpp
+class Solution {
+public:
+    int trailingZeroes(int n) {
+        int cnt = 0;
+        while(n > 0){
+            cnt += n / 5;
+            n = n / 5;
+        }
+        return cnt;
+    }
+};
+```
+
+
 

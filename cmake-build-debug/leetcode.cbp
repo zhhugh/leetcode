@@ -147,6 +147,9 @@
 		<Unit filename="/Users/zhouhan/githubProject/leetcode/Math/leetcode171.cpp">
 			<Option target="leetcode"/>
 		</Unit>
+		<Unit filename="/Users/zhouhan/githubProject/leetcode/Math/leetcode172.cpp">
+			<Option target="leetcode"/>
+		</Unit>
 		<Unit filename="/Users/zhouhan/githubProject/leetcode/Math/leetcode69.cpp">
 			<Option target="leetcode"/>
 		</Unit>

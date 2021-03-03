@@ -22,6 +22,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/leetcode.dir/LinkList/leetcode876.cpp.o"
   "CMakeFiles/leetcode.dir/LinkList/offer35.cpp.o"
   "CMakeFiles/leetcode.dir/Math/leetcode171.cpp.o"
+  "CMakeFiles/leetcode.dir/Math/leetcode172.cpp.o"
   "CMakeFiles/leetcode.dir/Math/leetcode69.cpp.o"
   "CMakeFiles/leetcode.dir/MonotonousStack/leetcode739.cpp.o"
   "CMakeFiles/leetcode.dir/MonotonousStack/leetcode84.cpp.o"
