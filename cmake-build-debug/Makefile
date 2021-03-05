@@ -440,6 +440,141 @@ Bit_operation/leetcode50.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/leetcode.dir/build.make CMakeFiles/leetcode.dir/Bit_operation/leetcode50.cpp.s
 .PHONY : Bit_operation/leetcode50.cpp.s
 
+DP/interview17_16.o: DP/interview17_16.cpp.o
+
+.PHONY : DP/interview17_16.o
+
+# target to build an object file
+DP/interview17_16.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/leetcode.dir/build.make CMakeFiles/leetcode.dir/DP/interview17_16.cpp.o
+.PHONY : DP/interview17_16.cpp.o
+
+DP/interview17_16.i: DP/interview17_16.cpp.i
+
+.PHONY : DP/interview17_16.i
+
+# target to preprocess a source file
+DP/interview17_16.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/leetcode.dir/build.make CMakeFiles/leetcode.dir/DP/interview17_16.cpp.i
+.PHONY : DP/interview17_16.cpp.i
+
+DP/interview17_16.s: DP/interview17_16.cpp.s
+
+.PHONY : DP/interview17_16.s
+
+# target to generate assembly for a file
+DP/interview17_16.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/leetcode.dir/build.make CMakeFiles/leetcode.dir/DP/interview17_16.cpp.s
+.PHONY : DP/interview17_16.cpp.s
+
+DP/leetcode1025.o: DP/leetcode1025.cpp.o
+
+.PHONY : DP/leetcode1025.o
+
+# target to build an object file
+DP/leetcode1025.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/leetcode.dir/build.make CMakeFiles/leetcode.dir/DP/leetcode1025.cpp.o
+.PHONY : DP/leetcode1025.cpp.o
+
+DP/leetcode1025.i: DP/leetcode1025.cpp.i
+
+.PHONY : DP/leetcode1025.i
+
+# target to preprocess a source file
+DP/leetcode1025.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/leetcode.dir/build.make CMakeFiles/leetcode.dir/DP/leetcode1025.cpp.i
+.PHONY : DP/leetcode1025.cpp.i
+
+DP/leetcode1025.s: DP/leetcode1025.cpp.s
+
+.PHONY : DP/leetcode1025.s
+
+# target to generate assembly for a file
+DP/leetcode1025.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/leetcode.dir/build.make CMakeFiles/leetcode.dir/DP/leetcode1025.cpp.s
+.PHONY : DP/leetcode1025.cpp.s
+
+DP/leetcode300.o: DP/leetcode300.cpp.o
+
+.PHONY : DP/leetcode300.o
+
+# target to build an object file
+DP/leetcode300.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/leetcode.dir/build.make CMakeFiles/leetcode.dir/DP/leetcode300.cpp.o
+.PHONY : DP/leetcode300.cpp.o
+
+DP/leetcode300.i: DP/leetcode300.cpp.i
+
+.PHONY : DP/leetcode300.i
+
+# target to preprocess a source file
+DP/leetcode300.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/leetcode.dir/build.make CMakeFiles/leetcode.dir/DP/leetcode300.cpp.i
+.PHONY : DP/leetcode300.cpp.i
+
+DP/leetcode300.s: DP/leetcode300.cpp.s
+
+.PHONY : DP/leetcode300.s
+
+# target to generate assembly for a file
+DP/leetcode300.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/leetcode.dir/build.make CMakeFiles/leetcode.dir/DP/leetcode300.cpp.s
+.PHONY : DP/leetcode300.cpp.s
+
+DP/leetcode354.o: DP/leetcode354.cpp.o
+
+.PHONY : DP/leetcode354.o
+
+# target to build an object file
+DP/leetcode354.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/leetcode.dir/build.make CMakeFiles/leetcode.dir/DP/leetcode354.cpp.o
+.PHONY : DP/leetcode354.cpp.o
+
+DP/leetcode354.i: DP/leetcode354.cpp.i
+
+.PHONY : DP/leetcode354.i
+
+# target to preprocess a source file
+DP/leetcode354.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/leetcode.dir/build.make CMakeFiles/leetcode.dir/DP/leetcode354.cpp.i
+.PHONY : DP/leetcode354.cpp.i
+
+DP/leetcode354.s: DP/leetcode354.cpp.s
+
+.PHONY : DP/leetcode354.s
+
+# target to generate assembly for a file
+DP/leetcode354.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/leetcode.dir/build.make CMakeFiles/leetcode.dir/DP/leetcode354.cpp.s
+.PHONY : DP/leetcode354.cpp.s
+
+DP/leetcode53.o: DP/leetcode53.cpp.o
+
+.PHONY : DP/leetcode53.o
+
+# target to build an object file
+DP/leetcode53.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/leetcode.dir/build.make CMakeFiles/leetcode.dir/DP/leetcode53.cpp.o
+.PHONY : DP/leetcode53.cpp.o
+
+DP/leetcode53.i: DP/leetcode53.cpp.i
+
+.PHONY : DP/leetcode53.i
+
+# target to preprocess a source file
+DP/leetcode53.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/leetcode.dir/build.make CMakeFiles/leetcode.dir/DP/leetcode53.cpp.i
+.PHONY : DP/leetcode53.cpp.i
+
+DP/leetcode53.s: DP/leetcode53.cpp.s
+
+.PHONY : DP/leetcode53.s
+
+# target to generate assembly for a file
+DP/leetcode53.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/leetcode.dir/build.make CMakeFiles/leetcode.dir/DP/leetcode53.cpp.s
+.PHONY : DP/leetcode53.cpp.s
+
 Double_pointer/leetcode11.o: Double_pointer/leetcode11.cpp.o
 
 .PHONY : Double_pointer/leetcode11.o
@@ -1060,6 +1195,33 @@ SortCode/MergeSort.s: SortCode/MergeSort.cpp.s
 SortCode/MergeSort.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/leetcode.dir/build.make CMakeFiles/leetcode.dir/SortCode/MergeSort.cpp.s
 .PHONY : SortCode/MergeSort.cpp.s
+
+Stack/leetcode232.o: Stack/leetcode232.cpp.o
+
+.PHONY : Stack/leetcode232.o
+
+# target to build an object file
+Stack/leetcode232.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/leetcode.dir/build.make CMakeFiles/leetcode.dir/Stack/leetcode232.cpp.o
+.PHONY : Stack/leetcode232.cpp.o
+
+Stack/leetcode232.i: Stack/leetcode232.cpp.i
+
+.PHONY : Stack/leetcode232.i
+
+# target to preprocess a source file
+Stack/leetcode232.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/leetcode.dir/build.make CMakeFiles/leetcode.dir/Stack/leetcode232.cpp.i
+.PHONY : Stack/leetcode232.cpp.i
+
+Stack/leetcode232.s: Stack/leetcode232.cpp.s
+
+.PHONY : Stack/leetcode232.s
+
+# target to generate assembly for a file
+Stack/leetcode232.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/leetcode.dir/build.make CMakeFiles/leetcode.dir/Stack/leetcode232.cpp.s
+.PHONY : Stack/leetcode232.cpp.s
 
 StringCode/leetcode12.o: StringCode/leetcode12.cpp.o
 
@@ -2102,6 +2264,21 @@ help:
 	@echo "... Bit_operation/leetcode50.o"
 	@echo "... Bit_operation/leetcode50.i"
 	@echo "... Bit_operation/leetcode50.s"
+	@echo "... DP/interview17_16.o"
+	@echo "... DP/interview17_16.i"
+	@echo "... DP/interview17_16.s"
+	@echo "... DP/leetcode1025.o"
+	@echo "... DP/leetcode1025.i"
+	@echo "... DP/leetcode1025.s"
+	@echo "... DP/leetcode300.o"
+	@echo "... DP/leetcode300.i"
+	@echo "... DP/leetcode300.s"
+	@echo "... DP/leetcode354.o"
+	@echo "... DP/leetcode354.i"
+	@echo "... DP/leetcode354.s"
+	@echo "... DP/leetcode53.o"
+	@echo "... DP/leetcode53.i"
+	@echo "... DP/leetcode53.s"
 	@echo "... Double_pointer/leetcode11.o"
 	@echo "... Double_pointer/leetcode11.i"
 	@echo "... Double_pointer/leetcode11.s"
@@ -2171,6 +2348,9 @@ help:
 	@echo "... SortCode/MergeSort.o"
 	@echo "... SortCode/MergeSort.i"
 	@echo "... SortCode/MergeSort.s"
+	@echo "... Stack/leetcode232.o"
+	@echo "... Stack/leetcode232.i"
+	@echo "... Stack/leetcode232.s"
 	@echo "... StringCode/leetcode12.o"
 	@echo "... StringCode/leetcode12.i"
 	@echo "... StringCode/leetcode12.s"

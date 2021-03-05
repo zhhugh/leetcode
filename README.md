@@ -1,25 +1,13 @@
-
-
-
-
-## 滑动窗口和单调栈
-
-- 滑动窗口（单调双端队列求滑动窗口的最小值）
-  - 保持双端队列始终是单调的，头部的下标是没有过期的
-- 单调栈
-  - 有重复值
-  - 无重复值
-
-
-
-## 动态规划与蓄水池算法
+# 蓄水池算法
 
 - 递推公式转化为矩阵乘法 快速幂
 - 蓄水池算法
   - 在任何时候，保证已经吐出袋子的球在袋子中的的概率相等，p =  n / k， n为袋子容量， k为当前已经吐出球的最大编号
   - 方法：在每个球要进入袋子时， 以n / k的概率入袋子， 再从袋子中以1 / n的概率出袋子即可
 
-## 比较器与堆
+
+
+# 比较器与堆
 
 - 比较器
   - c++ 比较器 是bool类型
@@ -36,7 +24,14 @@
       - 假设它为O(n),当样本量为2n时， 由于后面n个节点的代价最少为logn,所以会大于n * logn(个人感觉这个证明方法有点问题)
     - 从下往上建堆：O(n)
 
-## 前缀树
+# kmp算法
+
+判断T2是否为T1子树的结构
+
+- 序列化T1 和 T2
+- 如果T2是T1的子串， 则T2是T1子树的结构
+
+# 前缀树
 
 - 前缀树
   - c++中没有所谓的空对象的概念， 只有空的指针， 因此我们在将对象作为元素使用时，应该使用对象指针
@@ -53,7 +48,6 @@
 - 代码
 
 ```cpp
-
 class Node{
 public:
     int pass;
@@ -143,6 +137,7 @@ public:
 ```
 
 
+# 排序
 
 ## 不基于比较的排序
 
@@ -180,9 +175,10 @@ public:
 
 
 
-## 链表
+# 链表
 
 - 链表问题
+
   - 使用容器（方便）
   - 快慢指针
     - 返回中点（上中点）
@@ -214,7 +210,7 @@ public:
   
 
 
-## 二叉树
+# 树
 
 - 二叉树
 
@@ -245,7 +241,7 @@ public:
             - 压栈的时候，压的是一条左边界，所以每次出栈的这个结点，它的左边一定是访问完的，所以接下来访问右边即可
       - 一个栈实现后序遍历
         -  设置一个h结点，用来表示前一个遍历到的结点，这样就能判断左右子树是否遍历完了，从而确定下一步该遍历左子树还是右子树还是根结点
-      -  层序遍历
+      - 层序遍历
         - 发现每一层的结束
           - curEnd = 当前层的最后一个结点
           - nextEnd = 下一层的最后一个结点（每次入队的时候顺便更新）  
@@ -265,8 +261,6 @@ public:
   
 
     
-
-
 
 ## 找一个结点的后继结点
 
@@ -308,7 +302,7 @@ public:
 
 
 
-## 贪心算法（堆/排序）
+# 贪心算法（堆/排序）
 
 - 传递性
   -  字符串拼接后最小
@@ -321,7 +315,7 @@ public:
 
 
 
-## 并查集
+# 并查集
 
 两个优化
 
@@ -332,7 +326,7 @@ public:
 
 
 
-## bfprt
+# bfprt
 
 无序数组中找到第k小的数 O(n)
 
@@ -345,22 +339,11 @@ public:
 
 
 
-## kmp算法
-
-### 算法原理
-
-判断T2是否为T1子树的结构
-
-- 序列化T1 和 T2
-- 如果T2是T1的子串， 则T2是T1子树的结构
 
 
+# 前缀和
 
-
-
-## 前缀和
-
-### 一维前缀和
+## 一维前缀和
 
 `v[i]`表示的是`[0, i - 1]`范围的累加和
 
@@ -378,7 +361,7 @@ NumArray(vector<int>& nums) {
 
 
 
-### 二维前缀和
+## 二维前缀和
 
 空出第0行和第0列，则每个值$v[i + 1][j + 1]$都可以用下图表示, 因为灰色部分被加了两次，所以要减去一次：
 
@@ -412,9 +395,9 @@ int sumRegion(int row1, int col1, int row2, int col2) {
 
 
 
-## 位运算
+# 位运算
 
-### lowbit运算
+## lowbit运算
 
 功能：找二进制的最后一个1
 
@@ -442,7 +425,7 @@ int lowbit(int x)
 
 
 
-### 将二进制最后一个1变成0 || 计算二进制中1的个数
+## 将二进制最后一个1变成0 || 计算二进制中1的个数
 
 ```cpp
 x & (x - 1)
@@ -479,6 +462,10 @@ dp[i] = dp[i & (i - 1)] + 1
 
 
 
+
+
+# 数学
+
 ## n!中0的个数
 
 在$1 * 2 * 3 *...*n$ 中， 如果有 $1$ 个 $10$ ， 则多一个$0$, 也就是说，有一个 $2$ 和一个 $5$ 就可以多出一个$0$, 并且每五个数就有一个 $5$, 每过 $2$ 个数， 就有一个2， 所以要知道 $1 * 2 * 3 *...*n$ 中有几个5。但是每过 $25$ 个数就会多出一个$5$， 同理， 每过 $5^x$ 个数， 就会新增 $x$ 个5， 所以可以先加上每5步新增的5， 再加上剩下的每25步新增的5， 依次类推。
@@ -499,3 +486,332 @@ public:
 
 
 
+## 除数博弈
+
+![截屏2021-03-05 下午5.22.24](README.assets/截屏2021-03-05 下午5.22.24-4936230.png)
+
+
+
+解答：
+
+- 数字N如果是奇数，它的约数必然都是奇数；若为偶数，则其约数可奇可偶。
+  无论N初始为多大的值，游戏最终只会进行到N=2时结束，那么谁轮到N=2时谁就会赢。
+- 因为爱丽丝先手，N初始若为偶数，爱丽丝则只需一直选1，使鲍勃一直面临N为奇数的情况，这样爱丽丝稳赢；
+- N初始若为奇数，那么爱丽丝第一次选完之后N必为偶数（奇数 - 奇数 = 偶数），那么鲍勃只需一直选1就会稳赢。
+  综述，判断N是奇数还是偶数，即可得出最终结果！
+
+
+
+```cpp
+//
+// Created by zhouhan on 2021/3/5.
+//
+#include "../common.h"
+class Solution {
+public:
+    vector<vector<bool>> dp;
+    bool divisorGame(int N) {
+        dp = vector<vector<bool>>(2, vector<bool>(N + 1, false));
+        return f(N);
+    }
+
+    bool f(int N){
+        // 如果有数可拿
+        for(int i = 1; i < N; i++){
+            if(N % i == 0){
+                if(g(N - i)){
+                    return true;
+                }
+            }
+        }
+        // 如果无数可拿
+        return false;
+    }
+
+    bool g(int N){
+        // 如果有数可拿
+        for(int i = 1; i < N; i++){
+            if(N % i == 0){
+                if(!f(N - i)){
+                    return false;
+                }
+            }
+        }
+        // 如果无数可拿
+        return true;
+    }
+};
+
+
+class Solution2 {
+public:
+    vector<vector<bool>> dp;
+    bool divisorGame(int N) {
+        dp = vector<vector<bool>> (2, vector<bool>(N + 1, false));
+        dp[0][1] = false;
+        dp[1][1] = true;
+        for(int i = 2; i <= N; i++){
+            // 先手
+            for(int j = 1; j < i; j++){
+                if(i % j == 0){
+                    // 如果有一次机会能赢就是赢
+                    if(dp[1][i - j]){
+                        dp[0][i] = true;
+                        break;
+                    }
+                }
+            }
+            // 后手
+            for(int j = 1; j < i; j++){
+                dp[1][i] = true;
+                if(i % j == 0){
+                    // 如果有一次机会输， 那么就是输
+                    if(!dp[0][i - j]){
+                        dp[1][i] = false;
+                        break;
+                    }
+                }
+            }
+        }
+        return dp[0][N];
+    }
+};
+
+class Solution3 {
+public:
+    bool divisorGame(int N) {
+        return (N & 1) == 0;
+    }
+};
+```
+
+
+
+# 动态规划
+
+## 最长上升子序列
+
+方法1:
+
+- 状态定义：`dp[i]` 表示以`i`为结尾的最长上升子序列
+- 状态转移方程：$dp[i]=max(dp[j])+1,其中0≤j<i且num[j]<num[i]$
+
+```cpp
+class Solution {
+public:
+    int lengthOfLIS(vector<int>& nums) {
+        if(nums.empty()){
+            return 0;
+        }
+        int n = nums.size();
+        vector<int> dp(n, 1);
+        int maxVal = 1;
+        for(int i = 1; i < n; i++){
+            // [0...j - 1] 找到最后一个比nums
+            for(int j = 0; j <= i - 1; j++){
+                if(nums[i] > nums[j]){
+                    dp[i] = max(dp[i], dp[j] + 1);
+                }
+            }
+            maxVal = max(maxVal, dp[i]);
+        }
+        return maxVal;
+    }
+};
+```
+
+
+
+方法2：
+
+二分查找
+
+- 状态定义：`dp[i]`表示长度为`i + 1`的上升子序列最末尾的数字， 且是目前看到的尽量最小的数字
+- 状态转移
+  - 如果当前数字比长度最长的最后一个数字大，则长度+1， 末尾数字为当前数`num`(保证在此条件不满足的时候， 一定能找到一个数大于`num`)
+  - 找到比当前数字小的最大元素`f[j0]`, `f[j0] < num <= f[j0 + 1]` ,把`f[j0 + 1]`赋值为`num`,因为`num`比`f[j0 + 1]`小
+
+```cpp
+class Solution {
+public:
+    int lengthOfLIS(vector<int>& nums) {
+        if(nums.empty()){
+            return 0;
+        }
+        int n = nums.size();
+        vector<int> dp{nums[0]};
+        for(int i = 1; i < n; i++){
+            int num = nums[i];
+            if(num > dp.back()){
+                dp.push_back(num);
+            }else{
+                auto it = lower_bound(dp.begin(), dp.end(), num);
+                *it = num;
+            }
+        }
+        return dp.size();
+    }
+};
+```
+
+
+
+## 最大连续子数组和
+
+功能：找数组中和最大的连续数组
+
+```cpp
+class Solution{
+public:
+    int maxSubArray(vector<int>& nums) {
+        int pre = 0;
+        int maxVal = nums[0];
+        for(auto num: nums){
+            pre = max(num + pre, num);
+            maxVal = max(maxVal, pre);
+        }
+        return maxVal;
+    }
+};
+```
+
+
+
+## 数组中挑选若干个数，但是不能挑选相邻的数，求最大的和
+
+空间复杂度$O(n)$版本
+
+- 状态定义：$dp[i] = min(nums[j]), 0 <= j <= i$
+- 状态转移：$dp[i] = max(dp[i - 2] + nums[i], dp[i - 1])$
+
+```cpp
+class Solution {
+public:
+    int massage(vector<int>& nums) {
+        int n = nums.size();
+        if(nums.empty()){
+            return 0;
+        }
+        if(nums.size() == 1){
+            return nums[0];
+        }
+        vector<int> dp(n, 0);
+        dp[0] = nums[0];
+        dp[1] = max(nums[0], nums[1]);
+        for(int i = 2; i < n; i++){
+            dp[i] = max(nums[i] + dp[i - 2], dp[i - 1]);
+        }
+        return dp[n - 1];
+    }
+};
+```
+
+空间复杂度$O(1)$版本
+
+由于状态转移方程只依赖与$dp[i - 1]$ 和 $dp[i - 2]$, 所以可以将空间优化， 代码如下：
+
+```cpp
+class Solution {
+public:
+    int massage(vector<int>& nums) {
+        int a = 0;
+        int b = 0;
+        int maxVal = 0;
+        for(auto num: nums){
+            maxVal = max(a, b + num);
+            b = a;
+            a = maxVal;
+        }
+        return maxVal;
+    }
+};
+```
+
+
+
+# 滑动窗口和单调栈
+
+- 滑动窗口（单调双端队列求滑动窗口的最小值）
+  - 保持双端队列始终是单调的，头部的下标是没有过期的
+- 单调栈
+  - 有重复值
+  - 无重复值
+
+# 栈、队列
+
+## 双栈实现队列
+
+![IMG_B2B2CAE9E206-1](README.assets/IMG_B2B2CAE9E206-1.jpeg)
+
+- `push`的时候可以直接push到栈1
+- 如果`stk2`中有数，则直接`pop` 或者`peek`
+- 如果`stk2`中没有数，则从`stk1`中直接全部倒出
+
+```cpp
+class MyQueue {
+public:
+    stack<int> stk1;
+    stack<int> stk2;
+    /** Initialize your data structure here. */
+
+    MyQueue() {
+
+    }
+
+    /** Push element x to the back of queue. */
+    void push(int x) {
+        stk1.push(x);
+    }
+
+    /** Removes the element from in front of queue and returns that element. */
+    int pop() {
+        // 栈1的数进入栈2的数， 一定要一次性倒完， 不然先进的在底部没倒出来, 这样就不是先进先出了
+        // 保证栈2是不空的
+        if(stk2.empty()){
+            while(!stk1.empty()){
+                stk2.push(stk1.top());
+                stk1.pop();
+            }
+        }
+        int tmp = stk2.top();
+        stk2.pop();
+        return tmp;
+    }
+
+    /** Get the front element. */
+    int peek() {
+        if(stk2.empty()){
+            while(!stk1.empty()){
+                stk2.push(stk1.top());
+                stk1.pop();
+            }
+        }
+        return stk2.top();
+    }
+
+    /** Returns whether the queue is empty. */
+    bool empty() {
+        return stk1.empty() && stk2.empty();
+    }
+};
+```
+
+
+
+# 二分法
+
+## 几个二分查找的函数
+
+- 函数`lower_bound() `
+
+功能：函数`lower_bound()`在`first`和`last`中的前闭后开区间进行二分查找，返回**大于或等于val的第一个元素位置**。如果所有元素都小于val，则返回last的位置.
+
+注意：如果所有元素都小于val，则返回last的位置，且last的位置是**越界**的！！如果要对这个位置赋值会报错。
+
+- 函数`upper_bound() `
+
+功能：函数`upper_bound()`返回的在前闭后开区间查找的关键字的上界，返回**大于`val`**的第一个元素位置
+
+注意：返回查找元素的最后一个可安插位置，也就是“元素值>查找值”的第一个元素的位置。同样，如果val大于数组中全部元素，返回的是`last`。(注意：数组下标越界)
+
+- `binary_search`(起始地址，结束地址，要查找的数值)  返回的是是否存在这么一个数，是一个`bool`值。
