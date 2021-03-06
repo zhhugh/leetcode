@@ -34,6 +34,8 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/Users/zhouhan/githubProject/leetcode/Math/leetcode171.cpp" "/Users/zhouhan/githubProject/leetcode/cmake-build-debug/CMakeFiles/leetcode.dir/Math/leetcode171.cpp.o"
   "/Users/zhouhan/githubProject/leetcode/Math/leetcode172.cpp" "/Users/zhouhan/githubProject/leetcode/cmake-build-debug/CMakeFiles/leetcode.dir/Math/leetcode172.cpp.o"
   "/Users/zhouhan/githubProject/leetcode/Math/leetcode69.cpp" "/Users/zhouhan/githubProject/leetcode/cmake-build-debug/CMakeFiles/leetcode.dir/Math/leetcode69.cpp.o"
+  "/Users/zhouhan/githubProject/leetcode/MonotonousStack/MonotonousStackTemplete.cpp" "/Users/zhouhan/githubProject/leetcode/cmake-build-debug/CMakeFiles/leetcode.dir/MonotonousStack/MonotonousStackTemplete.cpp.o"
+  "/Users/zhouhan/githubProject/leetcode/MonotonousStack/leetcode503.cpp" "/Users/zhouhan/githubProject/leetcode/cmake-build-debug/CMakeFiles/leetcode.dir/MonotonousStack/leetcode503.cpp.o"
   "/Users/zhouhan/githubProject/leetcode/MonotonousStack/leetcode739.cpp" "/Users/zhouhan/githubProject/leetcode/cmake-build-debug/CMakeFiles/leetcode.dir/MonotonousStack/leetcode739.cpp.o"
   "/Users/zhouhan/githubProject/leetcode/MonotonousStack/leetcode84.cpp" "/Users/zhouhan/githubProject/leetcode/cmake-build-debug/CMakeFiles/leetcode.dir/MonotonousStack/leetcode84.cpp.o"
   "/Users/zhouhan/githubProject/leetcode/SlidingWindow/leetcode1004.cpp" "/Users/zhouhan/githubProject/leetcode/cmake-build-debug/CMakeFiles/leetcode.dir/SlidingWindow/leetcode1004.cpp.o"

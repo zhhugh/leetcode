@@ -168,6 +168,12 @@
 		<Unit filename="/Users/zhouhan/githubProject/leetcode/Math/leetcode69.cpp">
 			<Option target="leetcode"/>
 		</Unit>
+		<Unit filename="/Users/zhouhan/githubProject/leetcode/MonotonousStack/MonotonousStackTemplete.cpp">
+			<Option target="leetcode"/>
+		</Unit>
+		<Unit filename="/Users/zhouhan/githubProject/leetcode/MonotonousStack/leetcode503.cpp">
+			<Option target="leetcode"/>
+		</Unit>
 		<Unit filename="/Users/zhouhan/githubProject/leetcode/MonotonousStack/leetcode739.cpp">
 			<Option target="leetcode"/>
 		</Unit>
