@@ -270,6 +270,12 @@
 		<Unit filename="/Users/zhouhan/githubProject/leetcode/common.h">
 			<Option target="leetcode"/>
 		</Unit>
+		<Unit filename="/Users/zhouhan/githubProject/leetcode/graph/leetcode802.cpp">
+			<Option target="leetcode"/>
+		</Unit>
+		<Unit filename="/Users/zhouhan/githubProject/leetcode/graph/leetcode997.cpp">
+			<Option target="leetcode"/>
+		</Unit>
 		<Unit filename="/Users/zhouhan/githubProject/leetcode/greedy_algorithm/leetcode1217.cpp">
 			<Option target="leetcode"/>
 		</Unit>

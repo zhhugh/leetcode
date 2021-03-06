@@ -300,6 +300,120 @@ public:
 
 
 
+# 图
+
+## 拓扑排序
+
+将入度为0的结点放入队列中, 当队列不为空时， 取出队头元素， 将其指向的结点的入度删除
+
+```cpp
+res = {}
+while(!que.empty()){
+	 node = que.front();
+   res.push(node); // 收集答案
+	 for(nex: graph[node]){
+	 		inSize[nex]--; // nex结点的入度减少
+     	if(inSize[nex] == 0){
+        que.push(nex);
+      }
+	 }
+}
+```
+
+
+
+## 求安全结点
+
+- 安全结点定义：从结点出发， 走任意一条路都可以到一个出度为0的结点，则该结点时安全结点
+
+- 思路分析：
+  - 所有出度为0的结点一定是安全结点， 度为0的邻居结点， 如果去除了走向安全结点的边以后， 出度为0， 则该结点也是安全结点。那么拿走出度为0的安全结点， 并且删除安全结点与邻居结点的边以后， 重新露出来的出度为0的结点也是安全结点。
+  - 如果将图反向， 那么就是一道拓扑排序的题
+
+```cpp
+//
+// Created by zhouhan on 2021/3/6.
+//
+#include "../common.h"
+// 深度优先搜索
+class Solution {
+public:
+    vector<vector<int>> G;
+    vector<int> visited;
+    vector<int> safe;
+    vector<int> eventualSafeNodes(vector<vector<int>>& graph) {
+        G = graph;
+        int n = G.size();
+        visited.resize(n);
+        safe.resize(n, 0);
+        vector<int> ans;
+        for(int i = 0; i < n; i++){
+            fill(visited.begin(), visited.end(), 0);
+            if(dfs(i)){
+                ans.push_back(i);
+                safe[i] = 1;
+            }
+        }
+        return ans;
+    }
+
+    bool dfs(int node){
+        if(visited[node]){
+            return false;
+        }
+        if(safe[node]){
+            return true;
+        }
+        visited[node] = 1;
+        for(auto nex: G[node]){
+            if(!dfs(nex)){
+                return false;
+            }else{
+                safe[nex] = 1;
+            }
+        }
+        visited[node] = 0;
+        return true;
+    }
+};
+
+
+// 拓扑排序
+class Solution2 {
+public:
+    vector<int> eventualSafeNodes(vector<vector<int>>& graph) {
+        int n = graph.size();
+        vector<int> ans;
+        vector<vector<int>> reGraph(n);
+        vector<int> outSize(n, 0);
+        queue<int> que;
+        for(int i = 0; i < n; i++){
+            outSize[i] = graph[i].size();
+            if(outSize[i] == 0){
+                que.push(i);
+            }
+            for(auto nex: graph[i]){
+                reGraph[nex].push_back(i);
+            }
+        }
+
+        while(!que.empty()){
+            int node = que.front();
+            que.pop();
+            ans.push_back(node);
+            for(auto nex : reGraph[node]){
+                outSize[nex]--;
+                if(outSize[nex] == 0){
+                    que.push(nex);
+                }
+            }
+        }
+        sort(ans.begin(), ans.end());
+        return ans;
+    }
+};
+```
+
 
 
 # 贪心算法（堆/排序）

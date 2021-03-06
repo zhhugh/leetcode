@@ -1844,6 +1844,60 @@ array/leetcode888.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/leetcode.dir/build.make CMakeFiles/leetcode.dir/array/leetcode888.cpp.s
 .PHONY : array/leetcode888.cpp.s
 
+graph/leetcode802.o: graph/leetcode802.cpp.o
+
+.PHONY : graph/leetcode802.o
+
+# target to build an object file
+graph/leetcode802.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/leetcode.dir/build.make CMakeFiles/leetcode.dir/graph/leetcode802.cpp.o
+.PHONY : graph/leetcode802.cpp.o
+
+graph/leetcode802.i: graph/leetcode802.cpp.i
+
+.PHONY : graph/leetcode802.i
+
+# target to preprocess a source file
+graph/leetcode802.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/leetcode.dir/build.make CMakeFiles/leetcode.dir/graph/leetcode802.cpp.i
+.PHONY : graph/leetcode802.cpp.i
+
+graph/leetcode802.s: graph/leetcode802.cpp.s
+
+.PHONY : graph/leetcode802.s
+
+# target to generate assembly for a file
+graph/leetcode802.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/leetcode.dir/build.make CMakeFiles/leetcode.dir/graph/leetcode802.cpp.s
+.PHONY : graph/leetcode802.cpp.s
+
+graph/leetcode997.o: graph/leetcode997.cpp.o
+
+.PHONY : graph/leetcode997.o
+
+# target to build an object file
+graph/leetcode997.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/leetcode.dir/build.make CMakeFiles/leetcode.dir/graph/leetcode997.cpp.o
+.PHONY : graph/leetcode997.cpp.o
+
+graph/leetcode997.i: graph/leetcode997.cpp.i
+
+.PHONY : graph/leetcode997.i
+
+# target to preprocess a source file
+graph/leetcode997.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/leetcode.dir/build.make CMakeFiles/leetcode.dir/graph/leetcode997.cpp.i
+.PHONY : graph/leetcode997.cpp.i
+
+graph/leetcode997.s: graph/leetcode997.cpp.s
+
+.PHONY : graph/leetcode997.s
+
+# target to generate assembly for a file
+graph/leetcode997.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/leetcode.dir/build.make CMakeFiles/leetcode.dir/graph/leetcode997.cpp.s
+.PHONY : graph/leetcode997.cpp.s
+
 greedy_algorithm/leetcode1217.o: greedy_algorithm/leetcode1217.cpp.o
 
 .PHONY : greedy_algorithm/leetcode1217.o
@@ -2474,6 +2528,12 @@ help:
 	@echo "... array/leetcode888.o"
 	@echo "... array/leetcode888.i"
 	@echo "... array/leetcode888.s"
+	@echo "... graph/leetcode802.o"
+	@echo "... graph/leetcode802.i"
+	@echo "... graph/leetcode802.s"
+	@echo "... graph/leetcode997.o"
+	@echo "... graph/leetcode997.i"
+	@echo "... graph/leetcode997.s"
 	@echo "... greedy_algorithm/leetcode1217.o"
 	@echo "... greedy_algorithm/leetcode1217.i"
 	@echo "... greedy_algorithm/leetcode1217.s"

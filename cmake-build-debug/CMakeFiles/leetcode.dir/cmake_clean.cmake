@@ -62,6 +62,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/leetcode.dir/array/leetcode832.cpp.o"
   "CMakeFiles/leetcode.dir/array/leetcode867.cpp.o"
   "CMakeFiles/leetcode.dir/array/leetcode888.cpp.o"
+  "CMakeFiles/leetcode.dir/graph/leetcode802.cpp.o"
+  "CMakeFiles/leetcode.dir/graph/leetcode997.cpp.o"
   "CMakeFiles/leetcode.dir/greedy_algorithm/leetcode1217.cpp.o"
   "CMakeFiles/leetcode.dir/intereview/08_04.cpp.o"
   "CMakeFiles/leetcode.dir/intereview/17_12.cpp.o"
