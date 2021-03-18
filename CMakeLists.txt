@@ -3,4 +3,4 @@ project(leetcode)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(leetcode main.cpp)
+add_executable(leetcode main.cpp "LinkList/92_Reverse_Linked_List_II.cpp")
