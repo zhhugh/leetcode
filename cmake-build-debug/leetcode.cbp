@@ -8,370 +8,82 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/Users/zhouhan/githubProject/leetcode/cmake-build-debug"/>
+				<Option working_dir="D:/CLionProjects/leetcode/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/zhouhan/githubProject/leetcode/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/zhouhan/githubProject/leetcode/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/zhouhan/githubProject/leetcode/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/zhouhan/githubProject/leetcode/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="rebuild_cache">
-				<Option working_dir="/Users/zhouhan/githubProject/leetcode/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/zhouhan/githubProject/leetcode/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/zhouhan/githubProject/leetcode/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/zhouhan/githubProject/leetcode/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/zhouhan/githubProject/leetcode/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="edit_cache">
-				<Option working_dir="/Users/zhouhan/githubProject/leetcode/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/zhouhan/githubProject/leetcode/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/zhouhan/githubProject/leetcode/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/zhouhan/githubProject/leetcode/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/zhouhan/githubProject/leetcode/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="F:/clioninstall/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0/mingw64/bin/mingw32-make.exe -f &quot;D:/CLionProjects/leetcode/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="F:/clioninstall/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0/mingw64/bin/mingw32-make.exe -f &quot;D:/CLionProjects/leetcode/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="F:/clioninstall/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0/mingw64/bin/mingw32-make.exe -f &quot;D:/CLionProjects/leetcode/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="F:/clioninstall/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0/mingw64/bin/mingw32-make.exe -f &quot;D:/CLionProjects/leetcode/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="leetcode">
-				<Option output="/Users/zhouhan/githubProject/leetcode/cmake-build-debug/leetcode" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/zhouhan/githubProject/leetcode/cmake-build-debug"/>
+				<Option output="D:/CLionProjects/leetcode/cmake-build-debug/leetcode.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/CLionProjects/leetcode/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
-					<Add directory="/System/Library/Frameworks"/>
-					<Add directory="/Library/Frameworks"/>
+					<Add directory="F:/clioninstall/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="F:/clioninstall/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="F:/clioninstall/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="F:/clioninstall/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
+					<Add directory="F:/clioninstall/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="F:/clioninstall/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/zhouhan/githubProject/leetcode/cmake-build-debug/Makefile&quot;  VERBOSE=1 leetcode"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/zhouhan/githubProject/leetcode/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/zhouhan/githubProject/leetcode/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/zhouhan/githubProject/leetcode/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="F:/clioninstall/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0/mingw64/bin/mingw32-make.exe -f &quot;D:/CLionProjects/leetcode/cmake-build-debug/Makefile&quot;  VERBOSE=1 leetcode"/>
+					<CompileFile command="F:/clioninstall/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0/mingw64/bin/mingw32-make.exe -f &quot;D:/CLionProjects/leetcode/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="F:/clioninstall/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0/mingw64/bin/mingw32-make.exe -f &quot;D:/CLionProjects/leetcode/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="F:/clioninstall/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0/mingw64/bin/mingw32-make.exe -f &quot;D:/CLionProjects/leetcode/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="leetcode/fast">
-				<Option output="/Users/zhouhan/githubProject/leetcode/cmake-build-debug/leetcode" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/zhouhan/githubProject/leetcode/cmake-build-debug"/>
+				<Option output="D:/CLionProjects/leetcode/cmake-build-debug/leetcode.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/CLionProjects/leetcode/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
-					<Add directory="/System/Library/Frameworks"/>
-					<Add directory="/Library/Frameworks"/>
+					<Add directory="F:/clioninstall/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="F:/clioninstall/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="F:/clioninstall/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="F:/clioninstall/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
+					<Add directory="F:/clioninstall/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="F:/clioninstall/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/zhouhan/githubProject/leetcode/cmake-build-debug/Makefile&quot;  VERBOSE=1 leetcode/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/zhouhan/githubProject/leetcode/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/zhouhan/githubProject/leetcode/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/zhouhan/githubProject/leetcode/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="F:/clioninstall/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0/mingw64/bin/mingw32-make.exe -f &quot;D:/CLionProjects/leetcode/cmake-build-debug/Makefile&quot;  VERBOSE=1 leetcode/fast"/>
+					<CompileFile command="F:/clioninstall/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0/mingw64/bin/mingw32-make.exe -f &quot;D:/CLionProjects/leetcode/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="F:/clioninstall/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0/mingw64/bin/mingw32-make.exe -f &quot;D:/CLionProjects/leetcode/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="F:/clioninstall/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0/mingw64/bin/mingw32-make.exe -f &quot;D:/CLionProjects/leetcode/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="D:/CLionProjects/leetcode/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="F:/clioninstall/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0/mingw64/bin/mingw32-make.exe -f &quot;D:/CLionProjects/leetcode/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="F:/clioninstall/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0/mingw64/bin/mingw32-make.exe -f &quot;D:/CLionProjects/leetcode/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="F:/clioninstall/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0/mingw64/bin/mingw32-make.exe -f &quot;D:/CLionProjects/leetcode/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="F:/clioninstall/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0/mingw64/bin/mingw32-make.exe -f &quot;D:/CLionProjects/leetcode/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="D:/CLionProjects/leetcode/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="F:/clioninstall/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0/mingw64/bin/mingw32-make.exe -f &quot;D:/CLionProjects/leetcode/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="F:/clioninstall/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0/mingw64/bin/mingw32-make.exe -f &quot;D:/CLionProjects/leetcode/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="F:/clioninstall/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0/mingw64/bin/mingw32-make.exe -f &quot;D:/CLionProjects/leetcode/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="F:/clioninstall/x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0/mingw64/bin/mingw32-make.exe -f &quot;D:/CLionProjects/leetcode/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/zhouhan/githubProject/leetcode/BinarySearch/leetcode162.cpp">
+		<Unit filename="D:/CLionProjects/leetcode/main.cpp">
 			<Option target="leetcode"/>
 		</Unit>
-		<Unit filename="/Users/zhouhan/githubProject/leetcode/BinarySearch/leetcode275.cpp">
-			<Option target="leetcode"/>
-		</Unit>
-		<Unit filename="/Users/zhouhan/githubProject/leetcode/BinarySearch/leetcode3.cpp">
-			<Option target="leetcode"/>
-		</Unit>
-		<Unit filename="/Users/zhouhan/githubProject/leetcode/BinarySearch/leetcode378.cpp">
-			<Option target="leetcode"/>
-		</Unit>
-		<Unit filename="/Users/zhouhan/githubProject/leetcode/BinarySearch/leetcode530.cpp">
-			<Option target="leetcode"/>
-		</Unit>
-		<Unit filename="/Users/zhouhan/githubProject/leetcode/BinarySearch/leetcode74.cpp">
-			<Option target="leetcode"/>
-		</Unit>
-		<Unit filename="/Users/zhouhan/githubProject/leetcode/Bit_operation/leetcode1178.cpp">
-			<Option target="leetcode"/>
-		</Unit>
-		<Unit filename="/Users/zhouhan/githubProject/leetcode/Bit_operation/leetcode136.cpp">
-			<Option target="leetcode"/>
-		</Unit>
-		<Unit filename="/Users/zhouhan/githubProject/leetcode/Bit_operation/leetcode260.cpp">
-			<Option target="leetcode"/>
-		</Unit>
-		<Unit filename="/Users/zhouhan/githubProject/leetcode/Bit_operation/leetcode338.cpp">
-			<Option target="leetcode"/>
-		</Unit>
-		<Unit filename="/Users/zhouhan/githubProject/leetcode/Bit_operation/leetcode50.cpp">
-			<Option target="leetcode"/>
-		</Unit>
-		<Unit filename="/Users/zhouhan/githubProject/leetcode/DP/interview17_16.cpp">
-			<Option target="leetcode"/>
-		</Unit>
-		<Unit filename="/Users/zhouhan/githubProject/leetcode/DP/leetcode1025.cpp">
-			<Option target="leetcode"/>
-		</Unit>
-		<Unit filename="/Users/zhouhan/githubProject/leetcode/DP/leetcode115.cpp">
-			<Option target="leetcode"/>
-		</Unit>
-		<Unit filename="/Users/zhouhan/githubProject/leetcode/DP/leetcode131.cpp">
-			<Option target="leetcode"/>
-		</Unit>
-		<Unit filename="/Users/zhouhan/githubProject/leetcode/DP/leetcode132.cpp">
-			<Option target="leetcode"/>
-		</Unit>
-		<Unit filename="/Users/zhouhan/githubProject/leetcode/DP/leetcode300.cpp">
-			<Option target="leetcode"/>
-		</Unit>
-		<Unit filename="/Users/zhouhan/githubProject/leetcode/DP/leetcode354.cpp">
-			<Option target="leetcode"/>
-		</Unit>
-		<Unit filename="/Users/zhouhan/githubProject/leetcode/DP/leetcode53.cpp">
-			<Option target="leetcode"/>
-		</Unit>
-		<Unit filename="/Users/zhouhan/githubProject/leetcode/DP/leetcode978.cpp">
-			<Option target="leetcode"/>
-		</Unit>
-		<Unit filename="/Users/zhouhan/githubProject/leetcode/Double_pointer/leetcode11.cpp">
-			<Option target="leetcode"/>
-		</Unit>
-		<Unit filename="/Users/zhouhan/githubProject/leetcode/Double_pointer/leetcode16.cpp">
-			<Option target="leetcode"/>
-		</Unit>
-		<Unit filename="/Users/zhouhan/githubProject/leetcode/HashMap/leetcode705.cpp">
-			<Option target="leetcode"/>
-		</Unit>
-		<Unit filename="/Users/zhouhan/githubProject/leetcode/HashMap/leetcode706.cpp">
-			<Option target="leetcode"/>
-		</Unit>
-		<Unit filename="/Users/zhouhan/githubProject/leetcode/HeapCode/leetcode703.cpp">
-			<Option target="leetcode"/>
-		</Unit>
-		<Unit filename="/Users/zhouhan/githubProject/leetcode/LinkList/leetcode110.cpp">
-			<Option target="leetcode"/>
-		</Unit>
-		<Unit filename="/Users/zhouhan/githubProject/leetcode/LinkList/leetcode143.cpp">
-			<Option target="leetcode"/>
-		</Unit>
-		<Unit filename="/Users/zhouhan/githubProject/leetcode/LinkList/leetcode24.cpp">
-			<Option target="leetcode"/>
-		</Unit>
-		<Unit filename="/Users/zhouhan/githubProject/leetcode/LinkList/leetcode340.cpp">
-			<Option target="leetcode"/>
-		</Unit>
-		<Unit filename="/Users/zhouhan/githubProject/leetcode/LinkList/leetcode445.cpp">
-			<Option target="leetcode"/>
-		</Unit>
-		<Unit filename="/Users/zhouhan/githubProject/leetcode/LinkList/leetcode61.cpp">
-			<Option target="leetcode"/>
-		</Unit>
-		<Unit filename="/Users/zhouhan/githubProject/leetcode/LinkList/leetcode82.cpp">
-			<Option target="leetcode"/>
-		</Unit>
-		<Unit filename="/Users/zhouhan/githubProject/leetcode/LinkList/leetcode876.cpp">
-			<Option target="leetcode"/>
-		</Unit>
-		<Unit filename="/Users/zhouhan/githubProject/leetcode/LinkList/offer35.cpp">
-			<Option target="leetcode"/>
-		</Unit>
-		<Unit filename="/Users/zhouhan/githubProject/leetcode/Math/leetcode171.cpp">
-			<Option target="leetcode"/>
-		</Unit>
-		<Unit filename="/Users/zhouhan/githubProject/leetcode/Math/leetcode172.cpp">
-			<Option target="leetcode"/>
-		</Unit>
-		<Unit filename="/Users/zhouhan/githubProject/leetcode/Math/leetcode69.cpp">
-			<Option target="leetcode"/>
-		</Unit>
-		<Unit filename="/Users/zhouhan/githubProject/leetcode/MonotonousStack/MonotonousStackTemplete.cpp">
-			<Option target="leetcode"/>
-		</Unit>
-		<Unit filename="/Users/zhouhan/githubProject/leetcode/MonotonousStack/leetcode503.cpp">
-			<Option target="leetcode"/>
-		</Unit>
-		<Unit filename="/Users/zhouhan/githubProject/leetcode/MonotonousStack/leetcode739.cpp">
-			<Option target="leetcode"/>
-		</Unit>
-		<Unit filename="/Users/zhouhan/githubProject/leetcode/MonotonousStack/leetcode84.cpp">
-			<Option target="leetcode"/>
-		</Unit>
-		<Unit filename="/Users/zhouhan/githubProject/leetcode/Morris/leetcode94.cpp">
-			<Option target="leetcode"/>
-		</Unit>
-		<Unit filename="/Users/zhouhan/githubProject/leetcode/SlidingWindow/leetcode1004.cpp">
-			<Option target="leetcode"/>
-		</Unit>
-		<Unit filename="/Users/zhouhan/githubProject/leetcode/SlidingWindow/leetcode1052.cpp">
-			<Option target="leetcode"/>
-		</Unit>
-		<Unit filename="/Users/zhouhan/githubProject/leetcode/SlidingWindow/leetcode1438.cpp">
-			<Option target="leetcode"/>
-		</Unit>
-		<Unit filename="/Users/zhouhan/githubProject/leetcode/SlidingWindow/leetcode395.cpp">
-			<Option target="leetcode"/>
-		</Unit>
-		<Unit filename="/Users/zhouhan/githubProject/leetcode/SlidingWindow/leetcode480.cpp">
-			<Option target="leetcode"/>
-		</Unit>
-		<Unit filename="/Users/zhouhan/githubProject/leetcode/SlidingWindow/offer59_I.cpp">
-			<Option target="leetcode"/>
-		</Unit>
-		<Unit filename="/Users/zhouhan/githubProject/leetcode/SortCode/MergeSort.cpp">
-			<Option target="leetcode"/>
-		</Unit>
-		<Unit filename="/Users/zhouhan/githubProject/leetcode/Stack/leetcode1047.cpp">
-			<Option target="leetcode"/>
-		</Unit>
-		<Unit filename="/Users/zhouhan/githubProject/leetcode/Stack/leetcode224.cpp">
-			<Option target="leetcode"/>
-		</Unit>
-		<Unit filename="/Users/zhouhan/githubProject/leetcode/Stack/leetcode227.cpp">
-			<Option target="leetcode"/>
-		</Unit>
-		<Unit filename="/Users/zhouhan/githubProject/leetcode/Stack/leetcode232.cpp">
-			<Option target="leetcode"/>
-		</Unit>
-		<Unit filename="/Users/zhouhan/githubProject/leetcode/StringCode/leetcode12.cpp">
-			<Option target="leetcode"/>
-		</Unit>
-		<Unit filename="/Users/zhouhan/githubProject/leetcode/StringCode/leetcode13.cpp">
-			<Option target="leetcode"/>
-		</Unit>
-		<Unit filename="/Users/zhouhan/githubProject/leetcode/StringCode/leetcode5.cpp">
-			<Option target="leetcode"/>
-		</Unit>
-		<Unit filename="/Users/zhouhan/githubProject/leetcode/StringCode/leetcode567.cpp">
-			<Option target="leetcode"/>
-		</Unit>
-		<Unit filename="/Users/zhouhan/githubProject/leetcode/StringCode/leetcode8.cpp">
-			<Option target="leetcode"/>
-		</Unit>
-		<Unit filename="/Users/zhouhan/githubProject/leetcode/StringCode/leetcode995.cpp">
-			<Option target="leetcode"/>
-		</Unit>
-		<Unit filename="/Users/zhouhan/githubProject/leetcode/Tree/offer33.cpp">
-			<Option target="leetcode"/>
-		</Unit>
-		<Unit filename="/Users/zhouhan/githubProject/leetcode/TrieTree/TrieTree.cpp">
-			<Option target="leetcode"/>
-		</Unit>
-		<Unit filename="/Users/zhouhan/githubProject/leetcode/TrieTree/leetcode648.cpp">
-			<Option target="leetcode"/>
-		</Unit>
-		<Unit filename="/Users/zhouhan/githubProject/leetcode/TrieTree/leetcode720.cpp">
-			<Option target="leetcode"/>
-		</Unit>
-		<Unit filename="/Users/zhouhan/githubProject/leetcode/UnionFind/leetcode765.cpp">
-			<Option target="leetcode"/>
-		</Unit>
-		<Unit filename="/Users/zhouhan/githubProject/leetcode/array/leet566.cpp">
-			<Option target="leetcode"/>
-		</Unit>
-		<Unit filename="/Users/zhouhan/githubProject/leetcode/array/leetcode118.cpp">
-			<Option target="leetcode"/>
-		</Unit>
-		<Unit filename="/Users/zhouhan/githubProject/leetcode/array/leetcode119.cpp">
-			<Option target="leetcode"/>
-		</Unit>
-		<Unit filename="/Users/zhouhan/githubProject/leetcode/array/leetcode304.cpp">
-			<Option target="leetcode"/>
-		</Unit>
-		<Unit filename="/Users/zhouhan/githubProject/leetcode/array/leetcode448.cpp">
-			<Option target="leetcode"/>
-		</Unit>
-		<Unit filename="/Users/zhouhan/githubProject/leetcode/array/leetcode54.cpp">
-			<Option target="leetcode"/>
-		</Unit>
-		<Unit filename="/Users/zhouhan/githubProject/leetcode/array/leetcode561.cpp">
-			<Option target="leetcode"/>
-		</Unit>
-		<Unit filename="/Users/zhouhan/githubProject/leetcode/array/leetcode59.cpp">
-			<Option target="leetcode"/>
-		</Unit>
-		<Unit filename="/Users/zhouhan/githubProject/leetcode/array/leetcode766.cpp">
-			<Option target="leetcode"/>
-		</Unit>
-		<Unit filename="/Users/zhouhan/githubProject/leetcode/array/leetcode832.cpp">
-			<Option target="leetcode"/>
-		</Unit>
-		<Unit filename="/Users/zhouhan/githubProject/leetcode/array/leetcode867.cpp">
-			<Option target="leetcode"/>
-		</Unit>
-		<Unit filename="/Users/zhouhan/githubProject/leetcode/array/leetcode888.cpp">
-			<Option target="leetcode"/>
-		</Unit>
-		<Unit filename="/Users/zhouhan/githubProject/leetcode/common.h">
-			<Option target="leetcode"/>
-		</Unit>
-		<Unit filename="/Users/zhouhan/githubProject/leetcode/graph/leetcode743.cpp">
-			<Option target="leetcode"/>
-		</Unit>
-		<Unit filename="/Users/zhouhan/githubProject/leetcode/graph/leetcode802.cpp">
-			<Option target="leetcode"/>
-		</Unit>
-		<Unit filename="/Users/zhouhan/githubProject/leetcode/graph/leetcode997.cpp">
-			<Option target="leetcode"/>
-		</Unit>
-		<Unit filename="/Users/zhouhan/githubProject/leetcode/greedy_algorithm/leetcode1217.cpp">
-			<Option target="leetcode"/>
-		</Unit>
-		<Unit filename="/Users/zhouhan/githubProject/leetcode/intereview/08_04.cpp">
-			<Option target="leetcode"/>
-		</Unit>
-		<Unit filename="/Users/zhouhan/githubProject/leetcode/intereview/17_12.cpp">
-			<Option target="leetcode"/>
-		</Unit>
-		<Unit filename="/Users/zhouhan/githubProject/leetcode/intereview/4_06.cpp">
-			<Option target="leetcode"/>
-		</Unit>
-		<Unit filename="/Users/zhouhan/githubProject/leetcode/intereview/4_08.cpp">
-			<Option target="leetcode"/>
-		</Unit>
-		<Unit filename="/Users/zhouhan/githubProject/leetcode/intereview/8_07.cpp">
-			<Option target="leetcode"/>
-		</Unit>
-		<Unit filename="/Users/zhouhan/githubProject/leetcode/intereview/8_09.cpp">
-			<Option target="leetcode"/>
-		</Unit>
-		<Unit filename="/Users/zhouhan/githubProject/leetcode/kmp/leetcode28.cpp">
-			<Option target="leetcode"/>
-		</Unit>
-		<Unit filename="/Users/zhouhan/githubProject/leetcode/kmp/leetcode647.cpp">
-			<Option target="leetcode"/>
-		</Unit>
-		<Unit filename="/Users/zhouhan/githubProject/leetcode/leetCodeContest/1.cpp">
-			<Option target="leetcode"/>
-		</Unit>
-		<Unit filename="/Users/zhouhan/githubProject/leetcode/leetCodeContest/2.cpp">
-			<Option target="leetcode"/>
-		</Unit>
-		<Unit filename="/Users/zhouhan/githubProject/leetcode/leetCodeContest/228/1.cpp">
-			<Option target="leetcode"/>
-		</Unit>
-		<Unit filename="/Users/zhouhan/githubProject/leetcode/leetCodeContest/228/2.cpp">
-			<Option target="leetcode"/>
-		</Unit>
-		<Unit filename="/Users/zhouhan/githubProject/leetcode/leetCodeContest/3.cpp">
-			<Option target="leetcode"/>
-		</Unit>
-		<Unit filename="/Users/zhouhan/githubProject/leetcode/leetCodeContest/4.cpp">
-			<Option target="leetcode"/>
-		</Unit>
-		<Unit filename="/Users/zhouhan/githubProject/leetcode/main.cpp">
-			<Option target="leetcode"/>
-		</Unit>
-		<Unit filename="/Users/zhouhan/githubProject/leetcode/pat/1020_Tree_Traversals.cpp">
-			<Option target="leetcode"/>
-		</Unit>
-		<Unit filename="/Users/zhouhan/githubProject/leetcode/CMakeLists.txt">
+		<Unit filename="D:/CLionProjects/leetcode/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>
