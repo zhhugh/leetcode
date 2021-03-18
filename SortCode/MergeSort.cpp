@@ -26,7 +26,7 @@ void merge(vector<int> arr, int L, int R, int mid) {
 // 归并排序递归版本
 void mergeSort(vector<int> &arr, int L, int R){
     if(L == R) return;
-    int mid = L + (R - L) >> 1;
+    int mid = L + ((R - L) >> 1);
     mergeSort(arr, L, mid);
     mergeSort(arr, mid + 1, R);
     merge(arr, L, R, mid);

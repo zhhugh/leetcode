@@ -33,8 +33,8 @@ Node * buildTree(vector<int> post, vector<int> in, int pLeft, int pRight, int in
 }
 
 //int main(){
-//    vector<int> post;
-//    vector<int> in;
+//    caculateStack<int> post;
+//    caculateStack<int> in;
 //    int n;
 //    cin >> n;
 //    for(int i = 0; i < n; i++){
@@ -50,7 +50,7 @@ Node * buildTree(vector<int> post, vector<int> in, int pLeft, int pRight, int in
 //    Node *root = buildTree(post, in, 0, n - 1, 0, n - 1);
 //    queue<Node *> que;
 //    que.push(root);
-//    vector<int> ans;
+//    caculateStack<int> ans;
 //    while(!que.empty()){
 //        Node *node = que.front();
 //        que.pop();

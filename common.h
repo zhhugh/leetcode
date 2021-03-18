@@ -13,6 +13,7 @@
 #include <sstream>
 #include <unordered_map>
 #include <map>
+#include <set>
 using namespace std;
 
 //string
@@ -85,10 +86,10 @@ public:
 // stack
 
 //单调栈 序列中无重复值
-//vector<vector<int>> getNearLessNoRepeat(vector<int> arr){
+//vector<vector<int>> getNearLessNoRepeat(caculateStack<int> arr){
 //    int n = arr.size();
 //    // 记录每个数左边最近的比它小的数和右边最近的比它小的数
-//    vector<vector<int>> res(n, vector<int>(2, 0));
+//    vector<vector<int>> res(n, caculateStack<int>(2, 0));
 //    stack<int> stk;
 //    for(int i = 0; i < n; i++){
 //        while(!stk.empty() && arr[stk.top()] > arr[i]){
@@ -114,13 +115,13 @@ public:
 //// 单调栈 序列中有重复值
 //// 1. aa ->{a, a}， 两个a恰好相邻， 则加入到同一个list
 //// 2. a ... a, 中间的被弹走的必然是比a更大的
-//vector<vector<int>> getNearLess(vector<int> arr){
+//vector<vector<int>> getNearLess(caculateStack<int> arr){
 //    int n = arr.size();
-//    vector<vector<int>> res(n, vector<int>(2, 0));
-//    stack<vector<int>> stk;
+//    vector<caculateStack<int>> res(n, vector<int>(2, 0));
+//    stack<caculateStack<int>> stk;
 //    for(int i = 0; i < n; i++){
 //        while(!stk.empty() && arr[stk.top()[0]] > arr[i]){
-//            vector<int> popIs = stk.top();
+//            caculateStack<int> popIs = stk.top();
 //            stk.pop();
 //            int leftLessIdx = stk.empty() ? -1 : stk.top().back();
 //            for(auto popI: popIs){
@@ -131,12 +132,12 @@ public:
 //        if(!stk.empty() && arr[stk.top()[0]] == arr[i]){
 //            stk.top().push_back(i);
 //        }else{
-//            vector<int> pushLs{i};
+//            caculateStack<int> pushLs{i};
 //            stk.push(pushLs);
 //        }
 //    }
 //    while(!stk.empty()){
-//        vector<int> popLs = stk.top();
+//        caculateStack<int> popLs = stk.top();
 //        stk.pop();
 //        for(auto popI : popLs){
 //            int leftLessIdx = stk.empty() ? -1 : stk.top().back();

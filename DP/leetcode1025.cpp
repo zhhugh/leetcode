@@ -1,41 +1,9 @@
 //
 // Created by zhouhan on 2021/3/5.
 //
-#include "../common.h"
-class Solution {
-public:
-    vector<vector<bool>> dp;
-    bool divisorGame(int N) {
-        dp = vector<vector<bool>>(2, vector<bool>(N + 1, false));
-        return f(N);
-    }
+#include <vector>
+using namespace std;
 
-    bool f(int N){
-        // 如果有数可拿
-        for(int i = 1; i < N; i++){
-            if(N % i == 0){
-                if(g(N - i)){
-                    return true;
-                }
-            }
-        }
-        // 如果无数可拿
-        return false;
-    }
-
-    bool g(int N){
-        // 如果有数可拿
-        for(int i = 1; i < N; i++){
-            if(N % i == 0){
-                if(!f(N - i)){
-                    return false;
-                }
-            }
-        }
-        // 如果无数可拿
-        return true;
-    }
-};
 
 
 class Solution2 {

@@ -26,7 +26,7 @@ public:
     }
 };
 
-// dp[i] 表示长度为i的的最长上升子串结尾的最小值
+// f[i] 表示长度为i的的最长上升子串结尾的最小值
 
 class Solution2 {
 public:

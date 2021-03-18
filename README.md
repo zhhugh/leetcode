@@ -1,3 +1,13 @@
+# 字符串
+
+
+
+
+
+
+
+
+
 # 蓄水池算法
 
 - 递推公式转化为矩阵乘法 快速幂
@@ -24,7 +34,105 @@
       - 假设它为O(n),当样本量为2n时， 由于后面n个节点的代价最少为logn,所以会大于n * logn(个人感觉这个证明方法有点问题)
     - 从下往上建堆：O(n)
 
+# 优先级队列
+
+```cpp
+//升序队列
+priority_queue <int,vector<int>,greater<int> > q;
+//降序队列
+priority_queue <int,vector<int>,less<int> >q;
+```
+
+
+
+自定义类型：
+
+```cpp
+/方法1
+struct tmp1 //运算符重载<
+{
+    int x;
+    tmp1(int a) {x = a;}
+    bool operator<(const tmp1& a) const
+    {
+        return x < a.x; //大顶堆
+    }
+};
+
+//方法2
+struct tmp2 //重写仿函数
+{
+    bool operator() (tmp1 a, tmp1 b) 
+    {
+        return a.x < b.x; //大顶堆
+    }
+};
+
+```
+
+
+
+
+
+
+
 # kmp算法
+
+```cpp
+class Solution {
+public:
+    int strStr(string haystack, string needle) {
+        if(needle.empty()){
+            return 0;
+        }
+        if(haystack.size() < needle.size()){
+            return -1;
+        }
+        // 保证needle有一个元素
+        caculateStack<int> next = getNext(needle);
+        int n = haystack.size();
+        int m = needle.size();
+        int j = 0;
+        int i = 0;
+        while (i < n && j < m) {
+            if (haystack[i] == needle[j]) {
+                j++;
+                i++;
+            } else if (next[j] != -1) {
+                j = next[j];
+            } else {
+                i++;
+            }
+        }
+        return j == m ? i - m : -1;
+    }
+
+
+    caculateStack<int> getNext(string needle){
+        int n = needle.size();
+        if(n == 1){
+            return {-1};
+        }
+        caculateStack<int> next(n + 1, 0);
+        next[0] = -1;
+        next[1] = 0;
+        int cur = 2;
+        // cn: next[i - 1], 也是要和 i位置字符比较的字符的下标
+        // 如果 match[cn] != match[i]， 则 cn = next[cn]
+        int cn = 0;
+        while(cur < n){
+            if(needle[cur - 1] == needle[cn]){
+                next[cur++] = ++cn;
+            }else if(cn > 0){ //cn == 0 next[cn] = -1
+                cn = next[cn];
+            }else{ // cn = 0
+                next[cur++] = 0;
+            }
+        }
+        return next;
+    }
+};
+```
 
 判断T2是否为T1子树的结构
 
@@ -52,9 +160,9 @@ class Node{
 public:
     int pass;
     int end;
-    vector<Node *> nexts;
+    caculateStack<Node *> nexts;
 
-    Node(): pass(0), end(0), nexts(vector<Node *>(26, NULL)){
+    Node(): pass(0), end(0), nexts(caculateStack<Node *>(26, NULL)){
     };
 };
 
@@ -135,6 +243,122 @@ public:
 
 };
 ```
+
+# 字符串
+
+## 判断字符串中的所有子符是否为回文串
+
+- 方法1: 动态规划
+
+![image-20210308152155355](README.assets/image-20210308152155355.png)
+
+```cpp
+bool f[20][20];
+fill(f[0], f[20], true);
+for(int i = len - 1; i >= 0; i--){
+    for(int j = i + 1; j < len; j++){
+        f[i][j] = (s[i] == s[j]) && f[i + 1][j - 1];
+    }
+}
+```
+
+
+
+- 方法2: 拓展中心法
+
+  
+
+## 数字转字符串
+
+- 利用sstream中的string stream
+
+```cpp
+stringstream ss;
+int a = 123;
+ss << a;
+string s;
+ss >> s;
+cout << s << endl;
+return 0;
+```
+
+
+
+- ***浮点数会附带小数点后六位，不足补零，不推荐浮点数使用***
+
+```cpp
+#include <iostream>
+#include <sstream>
+using namespace std;
+
+int main()
+{
+    double x;
+    string str;
+    cin >> x;
+    str = to_string(x);
+    cout << str;
+    return 0;
+}
+```
+
+
+
+## 字符串转数字
+
+非纯数字字符串转数字会报错
+
+- 利用`stringstream`
+
+```cpp
+#include <iostream>
+#include <sstream>
+using namespace std;
+
+int main()
+{
+    double x;
+    string str;
+    stringstream ss;
+    cin >> str;
+    ss << str;
+    ss >> x;
+    cout << x;
+    return 0;
+}
+```
+
+- 利用`stoi`
+
+```cpp
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main()
+{
+    int x;
+    string str;
+    cin >> str;
+    x = stoi(str);
+    cout << x;
+    return 0;
+}
+```
+
+
+
+## 判断字符是否为数字、字母
+
+```
+isdigit(char) // 判断字符是否为数字
+isalpha(char) // 判断字符是否为字母
+```
+
+
+
+
+
 
 
 # 排序
@@ -338,15 +562,15 @@ while(!que.empty()){
 // 深度优先搜索
 class Solution {
 public:
-    vector<vector<int>> G;
-    vector<int> visited;
-    vector<int> safe;
-    vector<int> eventualSafeNodes(vector<vector<int>>& graph) {
+    vector<caculateStack<int>> G;
+    caculateStack<int> visited;
+    caculateStack<int> safe;
+    caculateStack<int> eventualSafeNodes(vector<vector<int>>& graph) {
         G = graph;
         int n = G.size();
         visited.resize(n);
         safe.resize(n, 0);
-        vector<int> ans;
+        caculateStack<int> ans;
         for(int i = 0; i < n; i++){
             fill(visited.begin(), visited.end(), 0);
             if(dfs(i)){
@@ -381,11 +605,11 @@ public:
 // 拓扑排序
 class Solution2 {
 public:
-    vector<int> eventualSafeNodes(vector<vector<int>>& graph) {
+    vector<int> eventualSafeNodes(caculateStack<vector<int>>& graph) {
         int n = graph.size();
-        vector<int> ans;
-        vector<vector<int>> reGraph(n);
-        vector<int> outSize(n, 0);
+        caculateStack<int> ans;
+        vector<caculateStack<int>> reGraph(n);
+        caculateStack<int> outSize(n, 0);
         queue<int> que;
         for(int i = 0; i < n; i++){
             outSize[i] = graph[i].size();
@@ -413,6 +637,10 @@ public:
     }
 };
 ```
+
+
+
+# 迪杰斯特拉
 
 
 
@@ -464,9 +692,9 @@ public:
 开辟$ n + 1 $的空间避免计算`sum[0]`
 
 ```cpp
-NumArray(vector<int>& nums) {
+NumArray(caculateStack<int>& nums) {
         int n = nums.size();
-        v = vector<int>(n + 1, 0);
+        v = caculateStack<int>(n + 1, 0);
         for(int i = 0; i < n; i++){
             v[i + 1] = v[i] + nums[i];
         }
@@ -484,7 +712,7 @@ NumArray(vector<int>& nums) {
 ```cpp
 int m = matrix.size();
 int n = matrix[0].size();
-v = vector<vector<int>>(m + 1, vector<int>(n + 1, 0));
+v = vector<vector<int>>(m + 1, caculateStack<int>(n + 1, 0));
 for(int i = 0; i < m; i++){
   for(int j = 0; j < n; j++) {
     v[i + 1][j + 1] = v[i][j+1] + v[i + 1][j] - v[i][j] + matrix[i][j];
@@ -565,13 +793,13 @@ int countOnes(int x) {
 - 方法1: 计算`i`二进制1的个数， 可先看一个比 `i`小的数，即去掉最后一个1的数`i >> 1`，那么：
 
 ```cpp
-dp[i] = dp[i >> 1] + (i & 1)
+f[i] = f[i >> 1] + (i & 1)
 ```
 
 - 方法2: 最低位变成0的结果 + 1
 
 ```cpp
-dp[i] = dp[i & (i - 1)] + 1
+f[i] = f[i & (i - 1)] + 1
 ```
 
 
@@ -623,9 +851,9 @@ public:
 #include "../common.h"
 class Solution {
 public:
-    vector<vector<bool>> dp;
+    caculateStack<vector<bool>> f;
     bool divisorGame(int N) {
-        dp = vector<vector<bool>>(2, vector<bool>(N + 1, false));
+        f = vector<caculateStack<bool>>(2, vector<bool>(N + 1, false));
         return f(N);
     }
 
@@ -659,35 +887,35 @@ public:
 
 class Solution2 {
 public:
-    vector<vector<bool>> dp;
+    caculateStack<vector<bool>> f;
     bool divisorGame(int N) {
-        dp = vector<vector<bool>> (2, vector<bool>(N + 1, false));
-        dp[0][1] = false;
-        dp[1][1] = true;
+        f = vector<caculateStack<bool>> (2, vector<bool>(N + 1, false));
+        f[0][1] = false;
+        f[1][1] = true;
         for(int i = 2; i <= N; i++){
             // 先手
             for(int j = 1; j < i; j++){
                 if(i % j == 0){
                     // 如果有一次机会能赢就是赢
-                    if(dp[1][i - j]){
-                        dp[0][i] = true;
+                    if(f[1][i - j]){
+                        f[0][i] = true;
                         break;
                     }
                 }
             }
             // 后手
             for(int j = 1; j < i; j++){
-                dp[1][i] = true;
+                f[1][i] = true;
                 if(i % j == 0){
                     // 如果有一次机会输， 那么就是输
-                    if(!dp[0][i - j]){
-                        dp[1][i] = false;
+                    if(!f[0][i - j]){
+                        f[1][i] = false;
                         break;
                     }
                 }
             }
         }
-        return dp[0][N];
+        return f[0][N];
     }
 };
 
@@ -703,31 +931,49 @@ public:
 
 # 动态规划
 
+## 为什么需要枚举子问题
+
+- 要解决规模为`n`的问题， 通过经验知道可以通过解决子问题来解决规模为n的问题，那么解决子问题又要解决子问题的子问题， 一直到边界（边界就是递归树的叶子结点），所以我们枚举子问题，从边界一直枚举到规模为n的问题。
+
+思维的方向：`n ---- > n - 1 ----> n-2 ---->......----> 边界`
+
+动态规划的方向：`边界 ---->......----> n`
+
+总之：父问题与子问题有关， 则可枚举子问题，动态规划是递归的逆操作
+
+有时候，一个问题需要多个子问题来支撑， 那么就用for循环来遍历子问题即可（同一层）
+
+# dis 深度优先搜索
+
+如果要保存沿途的值， 可以传入一个参数， 在dfs结束的时候将这个路径加入到结果中。一般这样的dfs返回值为空。
+
+
+
 ## 最长上升子序列
 
 方法1:
 
-- 状态定义：`dp[i]` 表示以`i`为结尾的最长上升子序列
-- 状态转移方程：$dp[i]=max(dp[j])+1,其中0≤j<i且num[j]<num[i]$
+- 状态定义：`f[i]` 表示以`i`为结尾的最长上升子序列
+- 状态转移方程：$f[i]=max(f[j])+1,其中0≤j<i且num[j]<num[i]$
 
 ```cpp
 class Solution {
 public:
-    int lengthOfLIS(vector<int>& nums) {
+    int lengthOfLIS(caculateStack<int>& nums) {
         if(nums.empty()){
             return 0;
         }
         int n = nums.size();
-        vector<int> dp(n, 1);
+        caculateStack<int> f(n, 1);
         int maxVal = 1;
         for(int i = 1; i < n; i++){
             // [0...j - 1] 找到最后一个比nums
             for(int j = 0; j <= i - 1; j++){
                 if(nums[i] > nums[j]){
-                    dp[i] = max(dp[i], dp[j] + 1);
+                    f[i] = max(f[i], f[j] + 1);
                 }
             }
-            maxVal = max(maxVal, dp[i]);
+            maxVal = max(maxVal, f[i]);
         }
         return maxVal;
     }
@@ -740,7 +986,7 @@ public:
 
 二分查找
 
-- 状态定义：`dp[i]`表示长度为`i + 1`的上升子序列最末尾的数字， 且是目前看到的尽量最小的数字
+- 状态定义：`f[i]`表示长度为`i + 1`的上升子序列最末尾的数字， 且是目前看到的尽量最小的数字
 - 状态转移
   - 如果当前数字比长度最长的最后一个数字大，则长度+1， 末尾数字为当前数`num`(保证在此条件不满足的时候， 一定能找到一个数大于`num`)
   - 找到比当前数字小的最大元素`f[j0]`, `f[j0] < num <= f[j0 + 1]` ,把`f[j0 + 1]`赋值为`num`,因为`num`比`f[j0 + 1]`小
@@ -748,22 +994,22 @@ public:
 ```cpp
 class Solution {
 public:
-    int lengthOfLIS(vector<int>& nums) {
+    int lengthOfLIS(caculateStack<int>& nums) {
         if(nums.empty()){
             return 0;
         }
         int n = nums.size();
-        vector<int> dp{nums[0]};
+        caculateStack<int> f{nums[0]};
         for(int i = 1; i < n; i++){
             int num = nums[i];
-            if(num > dp.back()){
-                dp.push_back(num);
+            if(num > f.back()){
+                f.push_back(num);
             }else{
-                auto it = lower_bound(dp.begin(), dp.end(), num);
+                auto it = lower_bound(f.begin(), f.end(), num);
                 *it = num;
             }
         }
-        return dp.size();
+        return f.size();
     }
 };
 ```
@@ -777,7 +1023,7 @@ public:
 ```cpp
 class Solution{
 public:
-    int maxSubArray(vector<int>& nums) {
+    int maxSubArray(caculateStack<int>& nums) {
         int pre = 0;
         int maxVal = nums[0];
         for(auto num: nums){
@@ -795,13 +1041,13 @@ public:
 
 空间复杂度$O(n)$版本
 
-- 状态定义：$dp[i] = min(nums[j]), 0 <= j <= i$
-- 状态转移：$dp[i] = max(dp[i - 2] + nums[i], dp[i - 1])$
+- 状态定义：$f[i] = min(nums[j]), 0 <= j <= i$
+- 状态转移：$f[i] = max(f[i - 2] + nums[i], f[i - 1])$
 
 ```cpp
 class Solution {
 public:
-    int massage(vector<int>& nums) {
+    int massage(caculateStack<int>& nums) {
         int n = nums.size();
         if(nums.empty()){
             return 0;
@@ -809,25 +1055,25 @@ public:
         if(nums.size() == 1){
             return nums[0];
         }
-        vector<int> dp(n, 0);
-        dp[0] = nums[0];
-        dp[1] = max(nums[0], nums[1]);
+        caculateStack<int> f(n, 0);
+        f[0] = nums[0];
+        f[1] = max(nums[0], nums[1]);
         for(int i = 2; i < n; i++){
-            dp[i] = max(nums[i] + dp[i - 2], dp[i - 1]);
+            f[i] = max(nums[i] + f[i - 2], f[i - 1]);
         }
-        return dp[n - 1];
+        return f[n - 1];
     }
 };
 ```
 
 空间复杂度$O(1)$版本
 
-由于状态转移方程只依赖与$dp[i - 1]$ 和 $dp[i - 2]$, 所以可以将空间优化， 代码如下：
+由于状态转移方程只依赖与$f[i - 1]$ 和 $f[i - 2]$, 所以可以将空间优化， 代码如下：
 
 ```cpp
 class Solution {
 public:
-    int massage(vector<int>& nums) {
+    int massage(caculateStack<int>& nums) {
         int a = 0;
         int b = 0;
         int maxVal = 0;
@@ -840,6 +1086,12 @@ public:
     }
 };
 ```
+
+## 分割回文串
+
+
+
+
 
 # 单调栈
 
@@ -858,9 +1110,9 @@ public:
 ```cpp
 class MonotonousStack{
 public:
-    vector<vector<int>> getNearLessNoRepeat(vector<int> arr){
+    vector<caculateStack<int>> getNearLessNoRepeat(vector<int> arr){
         int n = arr.size();
-        vector<vector<int>> res = vector<vector<int>>(n, vector<int>(2, -1));
+        vector<vector<int>> res = vector<caculateStack<int>>(n, vector<int>(2, -1));
         stack<int> stk;
         for(int i = 0; i < n; i++){
             // 栈中的元素在【被动】更新答案，遇到了答案就弹出
@@ -881,13 +1133,13 @@ public:
         return res;
     }
 
-    vector<vector<int>> getNearLess(vector<int> arr){
+    vector<vector<int>> getNearLess(caculateStack<int> arr){
         int n = arr.size();
-        stack<vector<int>> stk;
-        vector<vector<int>> res = vector<vector<int>> (n, vector<int> (2, -1));
+        stack<caculateStack<int>> stk;
+        caculateStack<vector<int>> res = vector<vector<int>> (n, vector<int> (2, -1));
         for(int i = 0; i < n; i++){
             while(!stk.empty() && arr[i] < arr[stk.top()[0]]){
-                vector<int> popIs = stk.top();
+                caculateStack<int> popIs = stk.top();
                 stk.pop();
                 for(auto popI : popIs){
                     res[popI][0] = stk.empty() ? -1 : stk.top().back();
@@ -897,12 +1149,12 @@ public:
             if(!stk.empty() && arr[i] == stk.top()[0]){
                 stk.top().push_back(i);
             }else{
-                vector<int> pushLs{i};
+                caculateStack<int> pushLs{i};
                 stk.push(pushLs);
             }
         }
         while(!stk.empty()){
-            vector<int> popIs = stk.top();
+            caculateStack<int> popIs = stk.top();
             stk.pop();
             for(auto popI: popIs){
                 res[popI][0] = stk.empty() ? -1 : stk.top().back();
