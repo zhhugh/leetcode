@@ -14,6 +14,7 @@ public:
     double findMedianSortedArrays(vector<int>& nums1, vector<int>& nums2) {
         // 保证nums1的长度小于等于nums2的长度
         // 这样nums2的长度总是会 >= 总长度的一半，这样就不会越界了
+        //
         if(nums1.size() > nums2.size()){
             vector<int> tmp = nums2;
             nums2 = nums1;

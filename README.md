@@ -482,9 +482,126 @@ isalpha(char) // 判断字符是否为字母
           - 如果左孩子不为空，则加入到队列中
           - 如果右孩子不为空，则加入到队列中
 
-  
 
-    
+## Morris遍历
+
+- Morris遍历之Morris序
+
+  从`root`出发，即`cur = root`，判断结点是否有左子树（因为有左子树意味着还不能访问当前结点，应当继续往左边访问）
+
+  - 如果有左子树：那么找到左子树上的最右边结点，也就是`cur`的前驱结点，记为`mostRight`,
+    - 如果`mostRight->right == null`, 那么将`mostRight`的右孩子设置为`cur`， `cur = cur->left`
+    - 如果`mostRight->right == cur`, 那么将`mostRight`的右孩子设置为空, `cur = cur->right`
+  - 如果没有左子树，`cur = cur->right`
+
+  结论：有左子树的结点会来到两次，没有左子树的只会来到一次
+
+```c pp
+//Morris 遍历
+// Morris 序
+
+class Morris {
+public:
+    void inorderTraversal(TreeNode* root) {
+        TreeNode *cur = root;
+        TreeNode *mostRight;
+        while(cur != nullptr){
+            // 左子树最右边结点
+            mostRight = cur->left;
+            // 如果有左子树
+            if(mostRight != nullptr){
+                // 找到左子树最右结点
+                while(mostRight->right != nullptr && mostRight->right != cur){
+                    mostRight = mostRight->right;
+                }
+                // 第一次来到cur结点
+                if(mostRight->right == nullptr){
+                    mostRight->right = cur;
+                    cur = cur->left;
+                    continue;
+                }else{// 第二次来到cur结点
+                    mostRight->right = nullptr;
+                }
+            }
+            // 没有左子树， 或者左子树的最右边结点指向cur
+            cur = cur->right;
+        }
+    }
+};
+```
+
+- Morris遍历实现中序遍历
+
+```cpp
+class MorrisInorder {
+public:
+    vector<int> inorderTraversal(TreeNode* root) {
+        TreeNode *cur = root;
+        TreeNode *mostRight;
+        vector<int> ans;
+        while(cur != nullptr){
+            mostRight = cur->left;
+            if(mostRight != nullptr){
+                while(mostRight->right != nullptr && mostRight->right != cur){
+                    mostRight = mostRight->right;
+                }
+                if(mostRight->right == nullptr){
+                    mostRight->right = cur;
+                    cur = cur->left;
+                    continue;
+                }else{
+                    mostRight->right = nullptr;
+                    ans.push_back(cur->val); // 第二次经历到这个结点的时候收集答案
+                }
+            }else{
+                ans.push_back(cur->val);
+            }
+            cur = cur->right;
+        }
+        return ans;
+    }
+};
+```
+
+- Morris后序遍历
+
+```cpp
+class MorrisPostorder {
+public:
+    vector<int> preorderTraversal(TreeNode* root) {
+        TreeNode *cur = root;
+        vector<int> ans;
+        while(cur != nullptr){
+            TreeNode *mostRight = cur->left;
+            if(mostRight != nullptr){
+                while(mostRight->right != nullptr && mostRight->right != cur){
+                    mostRight = mostRight->right;
+                }
+                if(mostRight->right == nullptr){
+                    mostRight->right = cur;
+                    ans.push_back(cur->val);
+                    cur = cur->left;
+                    continue;
+                }else{
+                    mostRight->right = nullptr;
+                }
+            }else{
+                ans.push_back(cur->val);
+            }
+            cur = cur->right;
+        }
+        return ans;
+    }
+};
+```
+
+
+
+Morris后序遍历
+
+
+
+
 
 ## 找一个结点的后继结点
 
