@@ -1,6 +1,10 @@
-#include <iostream>
+#include "common.h"
+
+
+
 
 int main() {
-    std::cout << "Hello, World!" << std::endl;
+    char a = 1 + '0';
+    cout <<  a << endl;
     return 0;
 }
