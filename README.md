@@ -448,6 +448,7 @@ isalpha(char) // 判断字符是否为字母
           - 弹出就打印
           - 如果有右孩子，就压入右孩子
           - 如果有左孩子，就压入左孩子
+        
       - 后序遍历
         - 准备两个栈
         - 头结点入栈1
@@ -456,6 +457,7 @@ isalpha(char) // 判断字符是否为字母
           - 如果有左孩子，就压入左孩子
           - 如果有右孩子，就压入右孩子
         - 栈2依次出栈
+        
       - 中序遍历
         - 准备一个栈
         - while（head不空 || 栈不空）
@@ -463,24 +465,54 @@ isalpha(char) // 判断字符是否为字母
           - 如果head为空，就弹栈，弹栈就打印，head来到弹出栈的结点的右边
           - 原因：
             - 压栈的时候，压的是一条左边界，所以每次出栈的这个结点，它的左边一定是访问完的，所以接下来访问右边即可
+        
       - 一个栈实现后序遍历
+        
         -  设置一个h结点，用来表示前一个遍历到的结点，这样就能判断左右子树是否遍历完了，从而确定下一步该遍历左子树还是右子树还是根结点
+        
       - 层序遍历
         - 发现每一层的结束
           - curEnd = 当前层的最后一个结点
           - nextEnd = 下一层的最后一个结点（每次入队的时候顺便更新）  
           - cur结点碰到当前层的最后一个结点则该层结束
-      - 二叉树的序列化
-        - 空结点不要忽略 
-        - 前 中 后的序列化
-        - 按层序列化
-          - 入队的时候加入到序列中
-          - 为空则不入队只加入到序列中
-      - 反序列化
-        - 层序遍历方式序列化
-          - 消费一个字符用于建一个结点，并消费两个字符生成左右两个孩子
-          - 如果左孩子不为空，则加入到队列中
-          - 如果右孩子不为空，则加入到队列中
+## 二叉树的序列化与反序列化
+
+```cpp
+class Codec {
+public:
+    int idx = 0;
+    // Encodes a tree to a single string.
+    string serialize(TreeNode* root) {
+        if(root == nullptr){
+            return "#_";
+        }
+        return to_string(root->val) + "_"
+            + serialize(root->left)
+            + serialize(root->right);
+    }
+
+    // Decodes your encoded data to tree.
+    TreeNode* deserialize(string data) {
+        if(data[idx] == '#'){
+            idx += 2;
+            return nullptr;
+        }
+        int i;
+        int num = 0;
+        for(i = idx; data[i] != '_'; i++){
+            num = num * 10 + data[i] - '0';
+        }
+        auto *root = new TreeNode(num);
+        idx = i + 1;
+        root->left = deserialize(data);
+        root->right = deserialize(data);
+        return root;
+    }
+};
+
+```
+
+
 
 
 ## Morris遍历

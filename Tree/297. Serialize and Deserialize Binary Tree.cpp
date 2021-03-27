@@ -2,15 +2,7 @@
 // Created by zhouhan on 2021/3/21.
 //
 #include "../common.h"
-/**
- * Definition for a binary tree node.
- * struct TreeNode {
- *     int val;
- *     TreeNode *left;
- *     TreeNode *right;
- *     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
- * };
- */
+
 class Codec {
 public:
     string path;
@@ -21,22 +13,19 @@ public:
         return path;
     }
 
-    void _serialize(TreeNode *root){
+    void _serialize(TreeNode *root, string &str){
         if(root == nullptr){
-            path += "#_";
+            str += "#";
             return;
         }
-        path += to_string(root->val);
-        path += "_";
-        _serialize(root->left);
-        _serialize(root->right);
+        str += to_string(root->val);
+        str += '_';
+        _serialize(root->left, str);
+        _serialize(root->right, str);
     }
 
-    // Decodes your encoded data to tree.
+
     TreeNode* deserialize(string data) {
-        if(idx == path.size()){
-            return nullptr;
-        }
         if(data[idx] == '#'){
             idx +=2;
             return nullptr;
@@ -51,6 +40,3 @@ public:
     }
 };
 
-// Your Codec object will be instantiated and called as such:
-// Codec ser, deser;
-// TreeNode* ans = deser.deserialize(ser.serialize(root));
