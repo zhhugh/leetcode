@@ -9,11 +9,11 @@ public:
     int idx = 0;
     // Encodes a tree to a single string.
     string serialize(TreeNode* root) {
-        _serialize(root);
+        _serialize(root, "");
         return path;
     }
 
-    void _serialize(TreeNode *root, string &str){
+    void _serialize(TreeNode *root, string str){
         if(root == nullptr){
             str += "#";
             return;
